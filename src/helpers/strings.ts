@@ -5,15 +5,15 @@ export function strings(chat: Chat, key: string) {
   return (
     localizations[key][chat.language] ||
     localizations[key]['en'] ||
-    `🤔 Localization not found, please, contact @borodutch.
+    `🤔 Localization not found, please, contact @warrensanchez.
 
-Локализация не найдена, пожалуйста, напишите @borodutch.`
+Локализация не найдена, пожалуйста, напишите @warrenshanchez.`
   )
 }
 
 export const localizations = {
   help: {
-    en: `Shieldy — is the best solution in Telegram to fight annoying spammers. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @shieldy\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+    en: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — shows this message
 /language — switches language
@@ -27,22 +27,20 @@ export const localizations = {
 /ban — same as trust, but the opposite
 /strict — use when you don't want to receive any newcomers' messages but captcha solutions until they pass captcha
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Still got questions? Check out the support channel — @borodutch\\_support. Shieldy code is open source and can be found [here](https://github.com/backmeupplz/shieldy). Thank you!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    ru: `Shieldy — это лучшее решение в Телеграме по борьбе с надоедливыми спамерами. Он просит всех новичков сделать определенное действие в течение заданного времени и банит их, в случае несогласия. Да, это настолько просто. Убедитесь, что @shieldy\\_bot — админ в вашей группе, и все уже готово! Вы можете продолжить настройку бота, воспользовавшись следующими командами:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    ru: `openSUSE Anti-spam bot. Он просит всех новичков сделать определенное действие в течение заданного времени и банит их, в случае несогласия. Да, это настолько просто. Убедитесь, что @Anti-spam\\_bot — админ в вашей группе, и все уже готово! Вы можете продолжить настройку бота, воспользовавшись следующими командами:
 
 /help — показывает это сообщение
 /language — меняет язык
@@ -69,10 +67,8 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /allowInvitingBots — могут ли пользователи приглашать в чат других ботов
 /greetingButtons — настроить кнопки для приветственного сообщения
 
-Остались вопросы? Почитайте канал поддержки — @borodutch\\_support. Код Shieldy в открытом доступе [вот тут](https://github.com/backmeupplz/shieldy). Спасибо!
-
-Попробуйте еще один мой проект — [Тудурант](https://todorant.com) ([iOS](https://apps.apple.com/ru/app/todorant/id1482078243), [Андроид](https://play.google.com/store/apps/details?id=com.todorant)). Это умный список задач, который использует поведенческую психологию для того, чтобы заставить ваш мозг выполнять задачи. Полностью бесплатен 30 дней без каких-либо обязательств, поэтому почему бы не попробовать улучшить свою продуктивность? Тудурант помог мне, поможет и вам!`,
-    it: `Shieldy — è la soluzione migliore per combattere gli spammer su Telegram. Chiede ai nuovi utenti di compiere un'azione entro un lasso di tempo prestabilito, altrimenti verranno kickati. E' semplice. Assicurati che @shieldy\\_bot sia un amministratore del gruppo ed è tutto pronto! Puoi anche impostare le azioni con i seguenti comandi:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    it: `openSUSE Anti-spam bot. Chiede ai nuovi utenti di compiere un'azione entro un lasso di tempo prestabilito, altrimenti verranno kickati. E' semplice. Assicurati che @Anti-spam\\_bot sia un amministratore del gruppo ed è tutto pronto! Puoi anche impostare le azioni con i seguenti comandi:
 
 /help — Mostra questo messaggio
 /language — Modifica la lingua
@@ -91,17 +87,15 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /deleteEntryOnKick — scegli se eliminare i messaggi d\'ingresso per coloro che hanno fallito il captcha
 /cas — scegli se usare Combot Anti-Spam
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Hai ancora domande? Dai un'occhiata al canale — @borodutch\\_support. Shieldy è open source e il suo codice sorgente può essere trovato [qui](https://github.com/backmeupplz/shieldy). Grazie!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    et: `Shieldy — Telegrami parim lahendus ängistatavate rämpspostitajate vastu. Ta palub kõigil uustulnukitel teha mingi tegevus, teatud aja jooksul, kui nad ei ole seda teinud, siis see blokeerib neid. Jah, see on nii lihtne. Veenduge, et @shieldy\\_bot — administraator teie gruppis, ja kõik on valmis! Konfigureerige Shieldy kasutades järgmised käsud:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    et: `openSUSE Anti-spam bot. Ta palub kõigil uustulnukitel teha mingi tegevus, teatud aja jooksul, kui nad ei ole seda teinud, siis see blokeerib neid. Jah, see on nii lihtne. Veenduge, et @Anti-spam\\_bot — administraator teie gruppis, ja kõik on valmis! Konfigureerige Anti-spam kasutades järgmised käsud:
 
 /help — näitab seda sõnumi
 /language — muutub keelt
@@ -115,22 +109,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — use when you don't want to receive any newcomers' messages but captcha solutions until they pass captcha
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Veel küsimusi? Kirjutage minu loojale — @borodutch\\_support. Shieldy lähtekood on avatud [siin](https://github.com/backmeupplz/shieldy). Aitäh!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    uk: `Shieldy — це найкраще рішення в Телеграмі для боротьби з надокучливими спамерами. Він просить усіх новачків зробити певну дію протягом вказаного часу і банить їх у разі незгоди. Так, це настільки просто! Переконайтеся, що @shieldy\\_bot — адміністратор у Вашій групі і усе вже готово! Ви можете продовжити налаштування бота, використавши наступні команди:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    uk: `openSUSE Anti-spam bot. Він просить усіх новачків зробити певну дію протягом вказаного часу і банить їх у разі незгоди. Так, це настільки просто! Переконайтеся, що @Anti-spam\\_bot — адміністратор у Вашій групі і усе вже готово! Ви можете продовжити налаштування бота, використавши наступні команди:
 
 /help — показує це повідомлення
 /language — змінює мову
@@ -149,17 +141,15 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /deleteEntryOnKick — чи видаляти повідомлення про вхід користувачів, що не вирішили капчу
 /cas — використовувати Combot Anti-Spam чи ні
 /underAttack — спеціальний режим коли всі новачки одразу вилучаються з чату
-/noAttack — відключити Shieldy
+/noAttack — відключити Anti-spam
 /noChannelLinks — автоматично видаляти повідомлення з посиланнями на телеграм-канали
 /viewConfig — подивитися поточні настройки
 /buttonText — змінити текст кнопки капчи в форматі \`/buttonText Я не бот!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Залишились питання? Почитайте канал підтримки — @borodutch\\_support. Код Shieldy у відкритому доступі [ось тут](https://github.com/backmeupplz/shieldy). Дякуємо!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    br: `Shieldy — é a melhor solução em combater spammers no telegram. Ele pede para um novato realizar uma ação em determinado tempo, caso contrário o usuário é kickado. Fácil assim. Tenha certeza que @shieldy\\_bot é um ADM no seu grupo e estará tudo bem! Você ainda pode mudar o comportamento do bot com os seguintes comandos:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    br: `openSUSE Anti-spam bot. Ele pede para um novato realizar uma ação em determinado tempo, caso contrário o usuário é kickado. Fácil assim. Tenha certeza que @Anti-spam\\_bot é um ADM no seu grupo e estará tudo bem! Você ainda pode mudar o comportamento do bot com os seguintes comandos:
 
 /help — mostra essa mensagem
 /language — muda a língua
@@ -173,22 +163,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — use when you don't want to receive any newcomers' messages but captcha solutions until they pass captcha
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Ainda tem perguntas? De uma olhada no canal de suporte — @borodutch\\_support. O codigo do Shieldy é OpenSource e pode ser encontrado [aqui](https://github.com/backmeupplz/shieldy). Obrigado.
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    tr: `Shieldy — Cam sıkıcı SPAM göndericilere karşı savaşmak için Telegram'daki en iyi çözümdür. Yeni gelenlerden belirli bir süre içerisinde belirli bir eylemi gerçekleştirmesini ister, aksi takdirde onları kovar. Bu çok kolaydır. Bunun için, @shieldy\\_bot botunun sohbetinizde yönetici olduğundan emin olun. İşte hepsi bu kadar! Ayrıca aşağıdaki bu komutlarla davranışları daha da ayrıntılı bir şekilde ayarlayabilirsiniz:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    tr: `openSUSE Anti-spam bot. Yeni gelenlerden belirli bir süre içerisinde belirli bir eylemi gerçekleştirmesini ister, aksi takdirde onları kovar. Bu çok kolaydır. Bunun için, @Anti-spam\\_bot botunun sohbetinizde yönetici olduğundan emin olun. İşte hepsi bu kadar! Ayrıca aşağıdaki bu komutlarla davranışları daha da ayrıntılı bir şekilde ayarlayabilirsiniz:
 
 /help — Bu iletiyi görüntüler
 /language — Dili değiştirir
@@ -202,22 +190,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — Yeni gelenlerin mesajlarını almak istemediğiniz zaman kullanın. Ancak CAPTCHA, testi geçene kadar çözüm sunar.
 /customCaptchaMessage — Özel CAPTCHA mesajınızı ayarlayın
-/deleteGreetingTime — Shieldy'nin selamlamasını \`/deleteGreetingTime 100\` gibi kaç saniye içinde sileceğini ayarlayın, 0 yaparak sıfırlayabilirsin.
+/deleteGreetingTime — Anti-spam'nin selamlamasını \`/deleteGreetingTime 100\` gibi kaç saniye içinde sileceğini ayarlayın, 0 yaparak sıfırlayabilirsin.
 /banUsers — Kullanıcıların yasaklanacağını mı yoksa kovulacağını mı ayarlayın
 /deleteEntryOnKick — CAPTCHA'dan başarısız olan kullanıcıların girdiği mesajların silinip silinmeyeceğini ayarlayın
 /cas — Combot Anti-Spam'ın kullanılıp kullanılmayacağını ayarlayın
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Hala sorularınız mı var? Destek kanalını kontrol edin: @borodutch\\_support. Shieldy'in kodu açık kaynaklıdır ve [buradan](https://github.com/backmeupplz/shieldy) erişilebilir. Teşekkür ederiz!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    es: `Shieldy — es la mejor solución en Telegram para luchar los molestos spammers. Pide a los recién llegados hacer una serie de acciones en un tiempo determinado, si no lo hacen los expulsa. Así de fácil. Asegúrate de que @shieldy\\_bot es administrador en el chat y listo! También puedes personalizar más su comportamiento con los siguientes comandos:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    es: `openSUSE Anti-spam bot. Pide a los recién llegados hacer una serie de acciones en un tiempo determinado, si no lo hacen los expulsa. Así de fácil. Asegúrate de que @Anti-spam\\_bot es administrador en el chat y listo! También puedes personalizar más su comportamiento con los siguientes comandos:
 
 /help — muestra este mensaje
 /language — cambia el idioma
@@ -231,22 +217,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — use when you don't want to receive any newcomers' messages but captcha solutions until they pass captcha
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-¿Sigues con preguntas? Comprueba el canal de soporte — @borodutch\\_support. El código de Shieldy es código libre y puede ser encontrado [aquí](https://github.com/backmeupplz/shieldy). ¡Gracias!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    zh: `Shieldy — 是电报中打击恼人的垃圾信息发送者的最佳解决方案，它要求新手在一段时间内执行一个集合动作，否则就会踢它们，就这么简单。确保 @shieldy\\_bot是您的管理员，并且这就可以了！您还可以使用以下命令进一步设置课程：
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    zh: `openSUSE Anti-spam bot — 是电报中打击恼人的垃圾信息发送者的最佳解决方案，它要求新手在一段时间内执行一个集合动作，否则就会踢它们，就这么简单。确保 @Anti-spam\\_bot是您的管理员，并且这就可以了！您还可以使用以下命令进一步设置课程：
 
 /help — 显示此消息
 /language — 切换语言
@@ -260,22 +244,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — 当你不希望收到任何新手的消息但使用验证码解决方案直到他们通过验证码时使用
 /customCaptchaMessage — 设置自定义验证码消息
-/deleteGreetingTime — 设置多少秒删除Shieldy的欢迎消息，像\`/deleteGreetingTime 100\`, 设置为0重置
+/deleteGreetingTime — 设置多少秒删除Anti-spam的欢迎消息，像\`/deleteGreetingTime 100\`, 设置为0重置
 /banUsers — 禁止还是踢出用户
 /deleteEntryOnKick — 删除还是保留回答验证码失败的用户加入消息
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-还有问题吗？查看支持渠道 — @borodutch\\_support。 Shieldy代码是开源的，可以在[这里](https://github.com/backmeupplz/shieldy)找到。谢谢！
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    no: `Shieldy — er den beste løsningen i Telegram for å holde irriterende falske kontoer tilbake. Den spørr nykommere om å utføre et sett med handlinger innenfor er viss tidsperiode, hvis ikke blir brukeren kastet ut. Det er så enkelt. Gjør @shieldy\\_bot til admin i chatten din og alt er klart! Du kan videre endre oppførselen med de følgende kommandoene:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    no: `openSUSE Anti-spam bot. Den spørr nykommere om å utføre et sett med handlinger innenfor er viss tidsperiode, hvis ikke blir brukeren kastet ut. Det er så enkelt. Gjør @Anti-spam\\_bot til admin i chatten din og alt er klart! Du kan videre endre oppførselen med de følgende kommandoene:
 
 /help — viser denne meldingen
 /language — bytter språk
@@ -289,22 +271,22 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — bruk når du ikke vil motta nykommernes meldinger untatt captcha løsninger før de har bestått testen
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Har du fortsatt spørsmål? Sjekk ut vår støtte-kanal — @borodutch\\_support. Shieldy's kode er åpen og kan bli funnet [her](https://github.com/backmeupplz/shieldy). Takk!
+Har du fortsatt spørsmål? Sjekk ut vår støtte-kanal — @borodutch\\_support. Anti-spam's kode er åpen og kan bli funnet [her](https://github.com/backmeupplz/shieldy). Takk!
 
 Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    de: `Shieldy — is the best solution in Telegram to fight annoying spammers. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @shieldy\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+    de: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — zeigt diese Nachricht an
 /language — ändert die Sprache
@@ -318,22 +300,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — benutze dieses Kommando, wenn du keine Beitrittsnachricht für neue User bekommen möchtest, bis sie den Captcha Test bestanden haben
 /customCaptchaMessage — eigene Captcha Nachricht anlegen 
-/deleteGreetingTime — hier kannst du einstellen, wann die Willkommens Nachricht von Shieldy gelöscht werden soll. \`/deleteGreetingTime 100\`, zurück setzen kannst du dies mit dem Wert "0"
+/deleteGreetingTime — hier kannst du einstellen, wann die Willkommens Nachricht von Anti-spam gelöscht werden soll. \`/deleteGreetingTime 100\`, zurück setzen kannst du dies mit dem Wert "0"
 /banUsers — hier kannst du User bannen oder kicken
 /deleteEntryOnKick — hier kannst du die Beitrittsnachricht löschen, wenn ein User den Captcha Test nicht besteht 
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Noch Fragen? Schau in unseren Support Kanal — @borodutch\\_support. Der Shieldy code ist open source und kann hier gefunden werden: https://github.com/backmeupplz/shieldy. Vielen Dank!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    tw: `Shieldy — 是 Telegram 中打擊惱人的垃圾信息發送者的最佳解決方案，它要求新進成員在一段時間內執行一個任務，否則就會踢它們，就這麼簡單。確保 @shieldy\\_bot 是群組的管理員，就可以了！您還可以使用以下指令進一步設定：
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    tw: `openSUSE Anti-spam bot：
 
 /help — 顯示此內容
 /language — 切換語言
@@ -347,22 +327,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — 限制新進成員在通過驗證前不能發任何消息
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-還有問題嗎？查看支援管道 — @borodutch\\_support。 Shieldy 代碼是開源的，可以在[這裡](https://github.com/backmeupplz/shieldy)找到。謝謝！
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    fr: `Shieldy — est la meilleure solution sur Telegram pour combattre les spammeurs. Il demande aux nouveaux membres d'exécuter une action définie dans un certain délais, sinon on lui donne un coup de pied au c... . C'est aussi simple. Assurez-vous que le bot @shieldy\\_bot est bien admin de votre groupe et c'est terminé ! Vous pouvez également configurer les différentes options via les commandes suivantes :
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    fr: `openSUSE Anti-spam bot. Il demande aux nouveaux membres d'exécuter une action définie dans un certain délais, sinon on lui donne un coup de pied au c... . C'est aussi simple. Assurez-vous que le bot @Anti-spam\\_bot est bien admin de votre groupe et c'est terminé ! Vous pouvez également configurer les différentes options via les commandes suivantes :
 
 /help — Afficher le message
 /language — Changer de langues
@@ -376,22 +354,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — Utilisez cette fonction si vous ne souhaitez plus recevoir les messages de nouveaux membres, jusqu'à ce qu'ils passent le test du captcha
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Vous avez des questions ? Consultez le support sur notre canal — @borodutch\\_support. Le code de Shieldy code est en open source et est disponible à l'adresse suivante [ici](https://github.com/backmeupplz/shieldy). Merci!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    id: `Shieldy adalah solusi terbaik untuk melawan spammer di Telegram. Yaitu dengan menguji anggota baru dengan melakukan sesuatu dalam batas waktu tertentu, jika gagal maka anggota baru akan ditolak bergabung. Pastikan @shieldy\\_bot menjadi admin di grup anda. Tersedia pengaturan tambahan dengan perintah berikut:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    id: `Anti-spam. Yaitu dengan menguji anggota baru dengan melakukan sesuatu dalam batas waktu tertentu, jika gagal maka anggota baru akan ditolak bergabung. Pastikan @Anti-spam\\_bot menjadi admin di grup anda. Tersedia pengaturan tambahan dengan perintah berikut:
 
 /help — menampilkan pesan bantuan ini
 /language — mengganti pilihan bahasa
@@ -405,22 +381,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — larang anggota baru mengirim pesan apa pun jika belum lolos ujian
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Masih ada pertanyaan? Gabung saja dengan kanal @borodutch\\_support. Shieldy berkode terbuka dan tersedia di [sini](https://github.com/backmeupplz/shieldy). Terima kasih!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    ko: `Shieldy 는 짜증나는 스패머들에 대응하기 위한 최고의 해결책입니다. 이 봇은 신규 입장자들에게 정해진 시간내에 정해진 행동을 실행하도록 요청하고, 정해진 행동을 하지 않으면 그들을 자동 추방시킵니다. 사용법은 정말 간단합니다.@shieldy\\_bot 가 채팅 그룹에서 관리자인지 확인을 하십시오. 모든 준비는 끝났습니다.!아래와 같은 명령을 사용하여 추가로 설정할 수도 있습니다:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    ko: `Anti-spam:
 
 /help – 이 메시지를 보여줍니다
 /language – 언어 변경
@@ -434,22 +408,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — 새로 온 사람의 메시지를 받지 않고 captcha 솔루션이 captcha를 통과할 때까지 수신하고 싶을 때 사용하십시오.
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-여전히 궁금한 사항이 있나요? 지원 채널 — @borodutch\\_support 을 확인해주세요. Shieldy 의 코드는 오픈소스 이며 (https://github.com/backmeupplz/shieldy) 에서 확인이 가능합니다. 감사합니다!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    am: `Shieldy — is the best solution in Telegram to fight annoying spammers. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @shieldy\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    am: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — ይህንን መልክት ያሳያል
 /language — ቋንቋ ይቀይራል 
@@ -463,23 +435,21 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — አዲስ ተጠቃሚ ሲገባ ሜሴጅ እንዳይኖር
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Still got questions? Check out the support channel — @borodutch\\_support. Shieldy code is open source and can be found [here](https://github.com/backmeupplz/shieldy). Thank you!
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
 
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-
-    cz: `Shieldy — je to nejlepší řešení na Telegramu v boji proti otravným spammerům. Požádá nováčky, aby provedli nastavenou akci ve stanovené lhůtě, jinak je vyhodí. Je to tak snadné. Ujistěte se, že @shieldy\\_bot je administrátor skupiny a to je vše! Nastavení můžete provést dle následujících příkazů:
+    cz: `openSUSE Anti-spam bot. Požádá nováčky, aby provedli nastavenou akci ve stanovené lhůtě, jinak je vyhodí. Je to tak snadné. Ujistěte se, že @Anti-spam\\_bot je administrátor skupiny a to je vše! Nastavení můžete provést dle následujících příkazů:
 
 /help — ukáže tuto zprávu
 /language — výběr jazyka
@@ -493,22 +463,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — použijte, pokud nechcete dostávat žádné zprávy od nováčků, dokud neprojdou testem
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Ještě máte nějaké otázky? Navštivte support channel — @borodutch\\_support. Shieldy kód je open source najdete ho [zde](https://github.com/backmeupplz/shieldy). Děkuji!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    sk: `Shieldy — najlepšie riešenie v boji proti otravným spamerom na Telegrame. Žiada od nováčikov, aby vykonali určitý krok v stanovenom čase, inak ich vyhodí. Je to také jednoduché. Nastavte @shieldy\\_bot ako správcu vo vašom čete a to je všetko! Pre podrobnejšie nastavenie správania môžete využiť tieto príkazy:
+Based on Shieldy. `,
+    sk: `openSUSE Anti-spam bot. Žiada od nováčikov, aby vykonali určitý krok v stanovenom čase, inak ich vyhodí. Je to také jednoduché. Nastavte @Anti-spam\\_bot ako správcu vo vašom čete a to je všetko! Pre podrobnejšie nastavenie správania môžete využiť tieto príkazy:
 
 /help — zobrazí túto správu
 /language — výber jazyka
@@ -522,22 +490,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — použite, ak nechcete prijímať žiadne správy pre nováčikov okrem riešení testu captcha, pokým ním neprejdú
 /customCaptchaMessage — nastavenie vlastnej správy testu captcha
-/deleteGreetingTime — nastavenie, kedy sa má odstrániť pozdrav Shieldyho v sekundách, napr. \`/deleteGreetingTime 100\`; resetuje sa tak, že ho nastavíte na 0
+/deleteGreetingTime — nastavenie, kedy sa má odstrániť pozdrav Anti-spamho v sekundách, napr. \`/deleteGreetingTime 100\`; resetuje sa tak, že ho nastavíte na 0
 /banUsers — voľba banu alebo vyhodenia nováčika zo skupiny
 /deleteEntryOnKick — voľba odstránenia vstupných správ pre používateľov, ktorí neprejdú testom captcha
 /cas — voľba použitia služby Combot Anti-Spam
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Máte ďalšie otázky? Navštívte náš kanál podpory — @borodutch\\_support. Zdrojový kód Shieldyho je otvorený a nájdete ho [tu](https://github.com/backmeupplz/shieldy). Ďakujem!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    ar: `Shieldy — هو أفضل حل في التيليجرام لمكافحة مرسلي الرسائل غير المرغوب فيها . يطلب من الأعضاء الجدد الخضوع لإختبارات معينة في غضون فترة محددة، وعندما لا يجتازون الإختبار فإنه يقوم بطردهم. الأمر بهذه السهولة تأكد من @shieldy\\_bot منح البوت صلاحية الآدمن! يمكنك أيضًا زيادة سلوكيات البوت بإستخدام الأوامر التالية:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    ar: `openSUSE Anti-spam bot:
 
 /help — يظهر هذه الرسالة
 /language — تغيير اللغة
@@ -551,22 +517,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — اختر هذا اذا كنت تريد تفعيل البوت لإجراء اختبار للأعضاء الجدد 
 /customCaptchaMessage — setup custom captcha message
-/deleteGreetingTime — setup when to delete Shieldy's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
+/deleteGreetingTime — setup when to delete Anti-spam's greeting in seconds like \`/deleteGreetingTime 100\`, reset by setting it to 0
 /banUsers — whether to ban or to kick users
 /deleteEntryOnKick — whether to delete entry messages for users who failed captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-لازال لديك اسئلة؟ تحقق من قناة الدعم — @borodutch\\_support. السورس كود مفتوح المصدر ويمكن العثور عليه [هنا](https://github.com/backmeupplz/shieldy). شكرأ! 
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    ja: `Shieldy — は迷惑なスパマーに対してのTelegraの1番のソリューションになります。新しく参加した人に、一定の時間内に、特定のアクションを実行するように要求します。とてもシンプルです。 利用するにあたり、@shieldy \\ _ botをチャットの管理者に追加してください。以下のコマンドでbotのアクションを設定することもできます:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    ja: `openSUSE Anti-spam bot:
 
 /help — このメッセージを表示する
 /language — 言語を変更する
@@ -580,23 +544,20 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — 新しく参加した人がキャプチャをパスするまで、メッセージではなくキャプチャソリューションを受け取りたい時に使う
 /customCaptchaMessage — キャプチャのメッセージをカスタマイズする
-/deleteGreetingTime — \`/deleteGreetingTime 100\のように何秒間でShieldyのメッセージが消えるかを設定する。0に設定することでリセットされる
+/deleteGreetingTime — \`/deleteGreetingTime 100\のように何秒間でAnti-spamのメッセージが消えるかを設定する。0に設定することでリセットされる
 /banUsers — バンまたはユーザーを退出させる
 /deleteEntryOnKick —キャプチャを失敗したユーザーの入室メッセージを削除するかどうか
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Still got questions? Check out the support channel — @borodutch\\_support. Shieldy code is open source and can be found [here](https://github.com/backmeupplz/shieldy). Thank you!
-まだご不明な点がありますか？サポートチャネルをチェックしてください！ — @borodutch\\_support. Shieldyコードはオープンソースとなり、こちらで見ることができます https://github.com/backmeupplz/shieldy. ありがとう！
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    ro: `Shieldy — este cea mai bună soluție de a lupta cu spamerii enervanți de pe Telegram. Le cere nou veniților să execute un set de acțiuni într-o perioadă setată de timp, altfel le dă kick. Atât de simplu este. Asigură-te ca @shieldy\\_bot este admin pe grupul tau și asta e tot! Pentru setări avansate, folosește comenzile de mai jos:
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
+    ro: `openSUSE Anti-spam bot. Le cere nou veniților să execute un set de acțiuni într-o perioadă setată de timp, altfel le dă kick. Atât de simplu este. Asigură-te ca @Anti-spam\\_bot este admin pe grupul tau și asta e tot! Pentru setări avansate, folosește comenzile de mai jos:
 
 /help — arată acest mesaj
 /language — schimbă limba
@@ -610,21 +571,19 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
 /ban — same as trust, but the opposite
 /strict — utilizează atunci când dorești sa nu primești nici un mesaj din partea userilor noi, ci doar soluții captcha până când aceștia trec de captcha
 /customCaptchaMessage — setează mesaj captcha custom
-/deleteGreetingTime — setează când se ștearge salutul lui Shieldy în secunde, precum \`/deleteGreetingTime 100\`. resetează setând valoarea 0
+/deleteGreetingTime — setează când se ștearge salutul lui Anti-spam în secunde, precum \`/deleteGreetingTime 100\`. resetează setând valoarea 0
 /banUsers — alege între a bana sau la le da kick userilor
 /deleteEntryOnKick — șterge mesajul de întâmpinare pentru userii ce nu au trecut de captcha
 /cas — whether to use Combot Anti-Spam or not
 /underAttack — toggle the mode to automatically kick all newcomers
-/noAttack — disables Shieldy
+/noAttack — disables Anti-spam
 /noChannelLinks — automatically delete messages that link to other telegram channels
-/viewConfig — view the current Shieldy configuration
+/viewConfig — view the current Anti-spam configuration
 /buttonText — change the captcha button text in the form of \`/buttonText I'm not a bot!\`
 /allowInvitingBots — whether users can invite other bots or not
 /greetingButtons — setup buttons for greeting message
 
-Still got questions? Check out the support channel — @borodutch\\_support. Shieldy code is open source and can be found [here](https://github.com/backmeupplz/shieldy). Thank you!
-
-Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
+openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
   },
   language: {
     en: 'Please, select the language.',
@@ -1654,89 +1613,89 @@ Also check out another one of my projects — [Todorant](https://todorant.com) (
   },
   deleteEntryOnKick_true: {
     en:
-      'Great! Shieldy will remove entry messages of the users who failed captcha.',
+      'Great! Anti-spam will remove entry messages of the users who failed captcha.',
     ru:
       'Щилди будет удалять сообщения о входе пользователей, проваливших капчу.',
     uk:
       'Чудово! Шилді тепер видалятиме усі вхідні повідомлення від користувачів, які провалили капчу.',
     tr:
-      'Harika! Shieldy, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldıracak.',
-    zh: '很棒！Shieldy将删除验证码失败用户的加入消息。',
+      'Harika! Anti-spam, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldıracak.',
+    zh: '很棒！Anti-spam将删除验证码失败用户的加入消息。',
     de:
-      'Top! Shieldy wird nun die Beitrittsnachrichten entfernen, wenn ein User den Captcha Test nicht besteht.',
+      'Top! Anti-spam wird nun die Beitrittsnachrichten entfernen, wenn ein User den Captcha Test nicht besteht.',
     sk:
-      'Super! Shieldy odstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
+      'Super! Anti-spam odstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
     ja:
-      '素晴らしいです！Shieldyは、キャプチャを失敗したユーザーの入室時のメッセージを削除します。',
+      '素晴らしいです！Anti-spamは、キャプチャを失敗したユーザーの入室時のメッセージを削除します。',
     ro:
-      'Minunat! Shieldy va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
+      'Minunat! Anti-spam va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
   },
   deleteEntryOnKick_false: {
     en:
-      'Great! Shieldy will not remove entry messages of the users who failed captcha.',
+      'Great! Anti-spam will not remove entry messages of the users who failed captcha.',
     ru:
       'Великолепно! Щилди не будет удалять сообщения о входе пользователей, проваливших капчу.',
     uk:
       'Чудово. Шилді не буде видаляти вхідні повідомлення від користувачів, які провалили капчу.',
     tr:
-      'Harika! Shieldy, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldırmayacak.',
-    zh: '很棒！Shieldy将不会删除验证码失败用户的加入消息。',
+      'Harika! Anti-spam, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldırmayacak.',
+    zh: '很棒！Anti-spam将不会删除验证码失败用户的加入消息。',
     de:
-      'Hammer! Shieldy wird nun die Beitrittsnachrichten nicht entfernen, wenn ein User den Captcha Test nicht besteht.',
+      'Hammer! Anti-spam wird nun die Beitrittsnachrichten nicht entfernen, wenn ein User den Captcha Test nicht besteht.',
     sk:
-      'Super! Shieldy neodstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
+      'Super! Anti-spam neodstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
     ja:
-      '素晴らしいです！Shieldyは、キャプチャを失敗したユーザーの入室時のメッセージを削除しません。',
+      '素晴らしいです！Anti-spamは、キャプチャを失敗したユーザーの入室時のメッセージを削除しません。',
     ro:
-      'Minunat! Shieldy nu va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
+      'Minunat! Anti-spam nu va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
   },
   cas_true: {
-    en: 'Great! Shieldy will now use Combot Anti-Spam.',
+    en: 'Great! Anti-spam will now use Combot Anti-Spam.',
     ru: 'Великолепно! Щилди теперь будет использовать Combot Anti-Spam.',
     uk: 'Чудово! Шилді тепер використовує Combot Anti-Spam.',
-    tr: 'Harika! Shieldy, artık Combot Anti-Spam kullanacak.',
-    sk: 'Skvelé! Shieldy odteraz bude používať Combot Anti-Spam.',
+    tr: 'Harika! Anti-spam, artık Combot Anti-Spam kullanacak.',
+    sk: 'Skvelé! Anti-spam odteraz bude používať Combot Anti-Spam.',
   },
   cas_false: {
-    en: 'Great! Shieldy will not use Combot Anti-Spam now.',
+    en: 'Great! Anti-spam will not use Combot Anti-Spam now.',
     ru: 'Великолепно! Щилди теперь не будет использовать Combot Anti-Spam.',
     uk: 'Чудово! Шилді тепер не використовує Combot Anti-Spam.',
-    tr: 'Harika! Shieldy, artık Combot Anti-Spam kullanmayacak.',
-    sk: 'Skvelé! Shieldy odteraz nebude používať Combot Anti-Spam.',
+    tr: 'Harika! Anti-spam, artık Combot Anti-Spam kullanmayacak.',
+    sk: 'Skvelé! Anti-spam odteraz nebude používať Combot Anti-Spam.',
   },
   underAttack_true: {
     en:
-      "Great! Shieldy will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",
+      "Great! Anti-spam will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",
     ru:
       'Отлично! Щилди теперь будет кикать всех, кто заходит в этот чат. Не забудьте отключить этот режим после окончания атаки при помощи команды /underAttack.',
     uk:
       'Чудово! Шилді тепер видалятиме усіх, хто спробує увійти до чату. Коли атака скінчиться, не забудьте вимкнути цей режим командою /underAttack.',
   },
   underAttack_false: {
-    en: 'Great! Shieldy will not kick everybody who enters this chat.',
+    en: 'Great! Anti-spam will not kick everybody who enters this chat.',
     ru: 'Отлично! Щилди теперь не будет кикать всех, кто заходит в этот чат.',
     uk:
       'Чудово! Шилді тепер не буде видаляти усіх, хто спробує увійти до чату.',
   },
   noAttack_true: {
     en:
-      "Great! Shieldy is disabled now. Don't forget to turn this mode off with /noAttack.",
+      "Great! Anti-spam is disabled now. Don't forget to turn this mode off with /noAttack.",
     ru:
       'Отлично! Теперь Щилди отключен. Не забудьте включить его назад командой /noAttack.',
   },
   noAttack_false: {
-    en: 'Great! Shieldy is now on.',
+    en: 'Great! Anti-spam is now on.',
     ru: 'Отлично! Щилди включен.',
   },
   noChannelLinks_true: {
     en:
-      'Great! Shieldy will now delete messages that link to telegram channels.',
+      'Great! Anti-spam will now delete messages that link to telegram channels.',
     ru:
       'Отлично! Щилди теперь будет удалять сообщения с ссылками на Телеграм-каналы.',
   },
   noChannelLinks_false: {
     en:
-      'Great! Shieldy will not delete messages that link to telegram channels.',
+      'Great! Anti-spam will not delete messages that link to telegram channels.',
     ru:
       'Отлично! Щилди теперь не будет удалять сообщения с ссылками на Телеграм-каналы.',
   },
