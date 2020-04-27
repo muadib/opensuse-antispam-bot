@@ -13,7 +13,7 @@ export function strings(chat: Chat, key: string) {
 
 export const localizations = {
   help: {
-    en: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+    en: `@opensuse\\_antispam\\_bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @opensuse\\_antispam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — shows this message
 /language — switches language
@@ -40,7 +40,7 @@ export const localizations = {
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    ru: `openSUSE Anti-spam bot. Он просит всех новичков сделать определенное действие в течение заданного времени и банит их, в случае несогласия. Да, это настолько просто. Убедитесь, что @Anti-spam\\_bot — админ в вашей группе, и все уже готово! Вы можете продолжить настройку бота, воспользовавшись следующими командами:
+    ru: `@opensuse\\_antispam\\_bot. Он просит всех новичков сделать определенное действие в течение заданного времени и банит их, в случае несогласия. Да, это настолько просто. Убедитесь, что @opensuse\\_antispam\\_bot — админ в вашей группе, и все уже готово! Вы можете продолжить настройку бота, воспользовавшись следующими командами:
 
 /help — показывает это сообщение
 /language — меняет язык
@@ -68,7 +68,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — настроить кнопки для приветственного сообщения
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    it: `openSUSE Anti-spam bot. Chiede ai nuovi utenti di compiere un'azione entro un lasso di tempo prestabilito, altrimenti verranno kickati. E' semplice. Assicurati che @Anti-spam\\_bot sia un amministratore del gruppo ed è tutto pronto! Puoi anche impostare le azioni con i seguenti comandi:
+    it: `@opensuse\\_antispam\\_bot. Chiede ai nuovi utenti di compiere un'azione entro un lasso di tempo prestabilito, altrimenti verranno kickati. E' semplice. Assicurati che @opensuse\\_antispam\\_bot sia un amministratore del gruppo ed è tutto pronto! Puoi anche impostare le azioni con i seguenti comandi:
 
 /help — Mostra questo messaggio
 /language — Modifica la lingua
@@ -95,7 +95,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    et: `openSUSE Anti-spam bot. Ta palub kõigil uustulnukitel teha mingi tegevus, teatud aja jooksul, kui nad ei ole seda teinud, siis see blokeerib neid. Jah, see on nii lihtne. Veenduge, et @Anti-spam\\_bot — administraator teie gruppis, ja kõik on valmis! Konfigureerige Anti-spam kasutades järgmised käsud:
+    et: `@opensuse\\_antispam\\_bot. Ta palub kõigil uustulnukitel teha mingi tegevus, teatud aja jooksul, kui nad ei ole seda teinud, siis see blokeerib neid. Jah, see on nii lihtne. Veenduge, et @opensuse\\_antispam\\_bot — administraator teie gruppis, ja kõik on valmis! Konfigureerige Anti-spam kasutades järgmised käsud:
 
 /help — näitab seda sõnumi
 /language — muutub keelt
@@ -122,7 +122,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    uk: `openSUSE Anti-spam bot. Він просить усіх новачків зробити певну дію протягом вказаного часу і банить їх у разі незгоди. Так, це настільки просто! Переконайтеся, що @Anti-spam\\_bot — адміністратор у Вашій групі і усе вже готово! Ви можете продовжити налаштування бота, використавши наступні команди:
+    uk: `@opensuse\\_antispam\\_bot. Він просить усіх новачків зробити певну дію протягом вказаного часу і банить їх у разі незгоди. Так, це настільки просто! Переконайтеся, що @opensuse\\_antispam\\_bot — адміністратор у Вашій групі і усе вже готово! Ви можете продовжити налаштування бота, використавши наступні команди:
 
 /help — показує це повідомлення
 /language — змінює мову
@@ -149,7 +149,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    br: `openSUSE Anti-spam bot. Ele pede para um novato realizar uma ação em determinado tempo, caso contrário o usuário é kickado. Fácil assim. Tenha certeza que @Anti-spam\\_bot é um ADM no seu grupo e estará tudo bem! Você ainda pode mudar o comportamento do bot com os seguintes comandos:
+    br: `@opensuse\\_antispam\\_bot. Ele pede para um novato realizar uma ação em determinado tempo, caso contrário o usuário é kickado. Fácil assim. Tenha certeza que @opensuse\\_antispam\\_bot é um ADM no seu grupo e estará tudo bem! Você ainda pode mudar o comportamento do bot com os seguintes comandos:
 
 /help — mostra essa mensagem
 /language — muda a língua
@@ -176,7 +176,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    tr: `openSUSE Anti-spam bot. Yeni gelenlerden belirli bir süre içerisinde belirli bir eylemi gerçekleştirmesini ister, aksi takdirde onları kovar. Bu çok kolaydır. Bunun için, @Anti-spam\\_bot botunun sohbetinizde yönetici olduğundan emin olun. İşte hepsi bu kadar! Ayrıca aşağıdaki bu komutlarla davranışları daha da ayrıntılı bir şekilde ayarlayabilirsiniz:
+    tr: `@opensuse\\_antispam\\_bot. Yeni gelenlerden belirli bir süre içerisinde belirli bir eylemi gerçekleştirmesini ister, aksi takdirde onları kovar. Bu çok kolaydır. Bunun için, @opensuse\\_antispam\\_bot botunun sohbetinizde yönetici olduğundan emin olun. İşte hepsi bu kadar! Ayrıca aşağıdaki bu komutlarla davranışları daha da ayrıntılı bir şekilde ayarlayabilirsiniz:
 
 /help — Bu iletiyi görüntüler
 /language — Dili değiştirir
@@ -203,7 +203,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    es: `openSUSE Anti-spam bot. Pide a los recién llegados hacer una serie de acciones en un tiempo determinado, si no lo hacen los expulsa. Así de fácil. Asegúrate de que @Anti-spam\\_bot es administrador en el chat y listo! También puedes personalizar más su comportamiento con los siguientes comandos:
+    es: `@opensuse\\_antispam\\_bot. Pide a los recién llegados hacer una serie de acciones en un tiempo determinado, si no lo hacen los expulsa. Así de fácil. Asegúrate de que @opensuse\\_antispam\\_bot es administrador en el chat y listo! También puedes personalizar más su comportamiento con los siguientes comandos:
 
 /help — muestra este mensaje
 /language — cambia el idioma
@@ -230,7 +230,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    zh: `openSUSE Anti-spam bot — 是电报中打击恼人的垃圾信息发送者的最佳解决方案，它要求新手在一段时间内执行一个集合动作，否则就会踢它们，就这么简单。确保 @Anti-spam\\_bot是您的管理员，并且这就可以了！您还可以使用以下命令进一步设置课程：
+    zh: `openSUSE Anti-spam bot — 是电报中打击恼人的垃圾信息发送者的最佳解决方案，它要求新手在一段时间内执行一个集合动作，否则就会踢它们，就这么简单。确保 @opensuse\\_antispam\\_bot是您的管理员，并且这就可以了！您还可以使用以下命令进一步设置课程：
 
 /help — 显示此消息
 /language — 切换语言
@@ -257,7 +257,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    no: `openSUSE Anti-spam bot. Den spørr nykommere om å utføre et sett med handlinger innenfor er viss tidsperiode, hvis ikke blir brukeren kastet ut. Det er så enkelt. Gjør @Anti-spam\\_bot til admin i chatten din og alt er klart! Du kan videre endre oppførselen med de følgende kommandoene:
+    no: `@opensuse\\_antispam\\_bot. Den spørr nykommere om å utføre et sett med handlinger innenfor er viss tidsperiode, hvis ikke blir brukeren kastet ut. Det er så enkelt. Gjør @opensuse\\_antispam\\_bot til admin i chatten din og alt er klart! Du kan videre endre oppførselen med de følgende kommandoene:
 
 /help — viser denne meldingen
 /language — bytter språk
@@ -286,7 +286,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 Har du fortsatt spørsmål? Sjekk ut vår støtte-kanal — @borodutch\\_support. Anti-spam's kode er åpen og kan bli funnet [her](https://github.com/backmeupplz/shieldy). Takk!
 
 Also check out another one of my projects — [Todorant](https://todorant.com) ([iOS](https://apps.apple.com/us/app/todorant/id1482078243), [Android](https://play.google.com/store/apps/details?id=com.todorant)). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.`,
-    de: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+    de: `@opensuse\\_antispam\\_bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @opensuse\\_antispam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — zeigt diese Nachricht an
 /language — ändert die Sprache
@@ -340,7 +340,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    fr: `openSUSE Anti-spam bot. Il demande aux nouveaux membres d'exécuter une action définie dans un certain délais, sinon on lui donne un coup de pied au c... . C'est aussi simple. Assurez-vous que le bot @Anti-spam\\_bot est bien admin de votre groupe et c'est terminé ! Vous pouvez également configurer les différentes options via les commandes suivantes :
+    fr: `@opensuse\\_antispam\\_bot. Il demande aux nouveaux membres d'exécuter une action définie dans un certain délais, sinon on lui donne un coup de pied au c... . C'est aussi simple. Assurez-vous que le bot @opensuse\\_antispam\\_bot est bien admin de votre groupe et c'est terminé ! Vous pouvez également configurer les différentes options via les commandes suivantes :
 
 /help — Afficher le message
 /language — Changer de langues
@@ -367,7 +367,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    id: `Anti-spam. Yaitu dengan menguji anggota baru dengan melakukan sesuatu dalam batas waktu tertentu, jika gagal maka anggota baru akan ditolak bergabung. Pastikan @Anti-spam\\_bot menjadi admin di grup anda. Tersedia pengaturan tambahan dengan perintah berikut:
+    id: `Anti-spam. Yaitu dengan menguji anggota baru dengan melakukan sesuatu dalam batas waktu tertentu, jika gagal maka anggota baru akan ditolak bergabung. Pastikan @opensuse\\_antispam\\_bot menjadi admin di grup anda. Tersedia pengaturan tambahan dengan perintah berikut:
 
 /help — menampilkan pesan bantuan ini
 /language — mengganti pilihan bahasa
@@ -421,7 +421,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    am: `openSUSE Anti-spam bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @Anti-spam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
+    am: `@opensuse\\_antispam\\_bot. It asks newcomers to execute a set action within a set period, otherwise it kicks them. It's this easy. Make sure @opensuse\\_antispam\\_bot is an admin at your chat and it's all done! You can also further setup the behaviour with the following commands:
 
 /help — ይህንን መልክት ያሳያል
 /language — ቋንቋ ይቀይራል 
@@ -449,7 +449,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
 
-    cz: `openSUSE Anti-spam bot. Požádá nováčky, aby provedli nastavenou akci ve stanovené lhůtě, jinak je vyhodí. Je to tak snadné. Ujistěte se, že @Anti-spam\\_bot je administrátor skupiny a to je vše! Nastavení můžete provést dle následujících příkazů:
+    cz: `@opensuse\\_antispam\\_bot. Požádá nováčky, aby provedli nastavenou akci ve stanovené lhůtě, jinak je vyhodí. Je to tak snadné. Ujistěte se, že @opensuse\\_antispam\\_bot je administrátor skupiny a to je vše! Nastavení můžete provést dle následujících příkazů:
 
 /help — ukáže tuto zprávu
 /language — výběr jazyka
@@ -476,7 +476,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 Based on Shieldy. `,
-    sk: `openSUSE Anti-spam bot. Žiada od nováčikov, aby vykonali určitý krok v stanovenom čase, inak ich vyhodí. Je to také jednoduché. Nastavte @Anti-spam\\_bot ako správcu vo vašom čete a to je všetko! Pre podrobnejšie nastavenie správania môžete využiť tieto príkazy:
+    sk: `@opensuse\\_antispam\\_bot. Žiada od nováčikov, aby vykonali určitý krok v stanovenom čase, inak ich vyhodí. Je to také jednoduché. Nastavte @opensuse\\_antispam\\_bot ako správcu vo vašom čete a to je všetko! Pre podrobnejšie nastavenie správania môžete využiť tieto príkazy:
 
 /help — zobrazí túto správu
 /language — výber jazyka
@@ -557,7 +557,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
 /greetingButtons — setup buttons for greeting message
 
 openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shieldy).`,
-    ro: `openSUSE Anti-spam bot. Le cere nou veniților să execute un set de acțiuni într-o perioadă setată de timp, altfel le dă kick. Atât de simplu este. Asigură-te ca @Anti-spam\\_bot este admin pe grupul tau și asta e tot! Pentru setări avansate, folosește comenzile de mai jos:
+    ro: `@opensuse\\_antispam\\_bot. Le cere nou veniților să execute un set de acțiuni într-o perioadă setată de timp, altfel le dă kick. Atât de simplu este. Asigură-te ca @opensuse\\_antispam\\_bot este admin pe grupul tau și asta e tot! Pentru setări avansate, folosește comenzile de mai jos:
 
 /help — arată acest mesaj
 /language — schimbă limba
