@@ -1,1 +1,1 @@
-bot: node ./dist/index.js
+bot: (yarn build-ts || true) && node ./dist/index.js
