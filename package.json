@@ -1,19 +1,19 @@
 {
   "name": "captcha_bot",
   "version": "1.0.0",
-  "description": "Telegram anti-spam bot",
+  "description": "Telegram anti-spam bot for use in openSUSE's Telegram groups. Based on Shieldy (https://github.com/backmeupplz/shieldy)",
   "main": "dist/index.js",
-  "repository": "https://github.com/backmeupplz/shieldy",
-  "author": "backmeupplz",
+  "repository": "https://github.com/muadib/opensuse-antispam-bot",
+  "author": "backmeupplz (https://github.com/backmeupplz/shieldy)",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "distribute": "(yarn build-ts || true) && node dist/index.js",
+    "distribute": "(yarn build-ts || true) && node ./dist/index.js",
     "develop": "concurrently -i -k -p \"[{name}]\" -n \"Node, TypeScript\" -c \"yellow.bold,cyan.bold\" \"yarn watch-js\" \"yarn watch-ts\"",
     "build-ts": "tsc --skipLibCheck",
     "watch-ts": "tsc -w --skipLibCheck",
     "watch-js": "nodemon dist/app.js",
-    "start": "(yarn build-ts || true) && node dist/index.js"
+    "start": "(yarn build-ts || true) && node ./dist/index.js"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
