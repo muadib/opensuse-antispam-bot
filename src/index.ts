@@ -81,6 +81,7 @@ setupNewcomers(bot)
 //Report
 setupReport(bot);
 
+
 // Catch
 bot.catch(console.log)
 
