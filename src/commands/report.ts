@@ -12,9 +12,13 @@ export function setupReport(bot: Telegraf<ContextMessageUpdate>) {
             adminUsers = adminUsers + '@' + m.user.username + ' '
           }
         })
-    } catch (error) {
-      //nada  
+    } catch (err) {
+      console.error(err)
     } 
+
+    if (adminUsers == '') {
+      adminUsers = '@warrensanchez'
+    }
 
     ctx.replyWithMarkdown(
       adminUsers,
