@@ -1729,4 +1729,8 @@ Wikipedia - https://wikipedia.com
     en: 'No buttons',
     ru: 'Нет кнопок',
   },
+  reportToAdmins: {
+    en: 'Reporting to ',
+    es: 'Reportando a '
+  },
 }

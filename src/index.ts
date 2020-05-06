@@ -35,7 +35,7 @@ import { setupButtonText } from './commands/buttonText'
 import { setupAllowInvitingBots } from './commands/allowInvitingBots'
 import { setupAdmin } from './commands/admin'
 import { setupGreetingButtons } from './commands/greetingButtons'
-import { setupReport } from './commands/report'
+import { setupReport, setupReport2 } from './commands/report'
 
 // Make Telegraph async
 bot.use(noWait)
@@ -79,7 +79,8 @@ setupGreetingButtons(bot)
 setupNewcomers(bot)
 
 //Report
-setupReport(bot);
+setupReport(bot)
+setupReport2(bot)
 
 
 // Catch
