@@ -14,10 +14,9 @@ export function setupReport(bot: Telegraf<ContextMessageUpdate>) {
           }
         })
         
-        ctx.replyWithMarkdown(
-          adminUsers,
-          Extra.inReplyTo(ctx.message.message_id)
-        )
+        ctx.reply(adminUsers, {
+          disable_web_page_preview: true,
+        })
         
     } catch (err) {
       console.error(err)
@@ -50,14 +49,14 @@ export function sendReport(ctx: ContextMessageUpdate) {
         }
       })
 
-      return ctx.replyWithMarkdown(adminUsers, {
+      return ctx.reply(adminUsers, {
         disable_web_page_preview: true,
       })
 
     })
   } catch (err) {
     console.error(err)
-    return ctx.replyWithMarkdown('@warrensanchez - ', {
+    return ctx.reply('@warrensanchez - ', {
       disable_web_page_preview: true,
     })
   }    
