@@ -1121,7 +1121,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
   },
   digits_warning: {
     en:
-      ', please, send the solution to the arithmetic operation provided within the time amount specified to this group, otherwise you will be kicked. Thank you!',
+      ', please reply to this message with the solution to the arithmetic operation provided within the time amount specified. Thank you!',
     ru:
       ', пожалуйста, отправьте решение указанной арифметической задачи в этот чат в течение указанного времени, иначе вы будете кикнуты. Спасибо!',
     it:
@@ -1135,7 +1135,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
     tr:
       ', Lütfen, sağlanan aritmetik işlem çözümünü belirtilen süre içerisinde bu gruba gönderin, aksi takdirde kovulacaksınız. Teşekkür ederiz!',
     es:
-      ', por favor, envíe por este grupo la solución a la ecuación matemática proporcionada dentro del tiempo especificado, si no, serás expulsado. ¡Gracias!',
+      ', por favor, confirme que es humano respondiendo éste mensaje con la solución a la ecuación matemática dentro del tiempo especificado. ¡Gracias!',
     zh: '，请在指定的时间内将数学计算答案发送到本群组，否则您将被踢。 谢谢！',
     no:
       ', vennligst send svaret på matteproblemet innen den spesifiserte tidsperioden, hvis ikke blir du sparket. Takk!',
@@ -1160,7 +1160,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
   },
   button_warning: {
     en:
-      ', please, press the button below within the time amount specified, otherwise you will be kicked. Thank you!',
+      ' hi! please, press the button below within the time amount specified to demonstrate you are human. Thank you!',
     ru:
       ', пожалуйста, нажмите на кнопку ниже в течение указанного времени, иначе вы будете кикнуты. Спасибо!',
     it:
@@ -1200,7 +1200,8 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
   },
   image_warning: {
     en:
-      ', please, send the characters displayed within the time amount specified to this group, otherwise you will be kicked. Thank you!',
+      '. Hi! Please reply to this message with the characters displayed to confirm that you are human. Thank you!',
+    es:'. Por favor, confirme que es humano respondiendo éste mensaje con los caracteres mostrados. ¡Gracias!',
     ru:
       ', пожалуйста, отправьте цифры с картинки в этот чат в течение указанного времени, иначе вы будете кикнуты. Спасибо!',
     et:
@@ -1680,11 +1681,13 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
   noAttack_true: {
     en:
       "Great! Anti-spam is disabled now. Don't forget to turn this mode off with /noAttack.",
+    es: "¡Anti-spam desactivado!",
     ru:
       'Отлично! Теперь Щилди отключен. Не забудьте включить его назад командой /noAttack.',
   },
   noAttack_false: {
     en: 'Great! Anti-spam is now on.',
+    es: '¡Anti-spam activado!',
     ru: 'Отлично! Щилди включен.',
   },
   noChannelLinks_true: {
