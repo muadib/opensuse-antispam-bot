@@ -1243,7 +1243,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
     uk: 'Тільки кандидат на те, щоб бути людиною, може натискати на цю кнопку.',
     br: 'Apenas o usuário citado pode apertar esse botão.',
     tr: 'Sadece bot olmayan bir aday bu düğmeye basabilir.',
-    es: 'Solo el candidato para no ser un roobot puede presionar este botón.',
+    es: 'Solo el candidato para no ser un robot puede presionar este botón.',
     zh: '只有不是机器人的候选人才能按此按钮。',
     no: 'Bare kandidaten som blir testet kan trykke denne knappen.',
     de: 'Nur der User der kein Bot ist, kann diesen Knopf drücken.',
