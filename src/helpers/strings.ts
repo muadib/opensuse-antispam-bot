@@ -1121,7 +1121,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
   },
   digits_warning: {
     en:
-      ', please reply to this message with the solution to the arithmetic operation provided within the time amount specified. Thank you!',
+      ', please reply this message with the solution to the arithmetic operation provided within the time amount specified to confirm you are not a bot. Thank you!',
     ru:
       ', пожалуйста, отправьте решение указанной арифметической задачи в этот чат в течение указанного времени, иначе вы будете кикнуты. Спасибо!',
     it:
