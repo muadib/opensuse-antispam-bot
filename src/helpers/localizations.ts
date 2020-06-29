@@ -1722,5 +1722,5 @@ export const localizations = {
     reportToAdmins: {
       en: 'Reporting to ',
       es: 'Reportando a '
-    },
+    }
   }

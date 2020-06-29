@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Dependencies
 import { Chat } from '../models'
 
@@ -1389,7 +1388,7 @@ openSUSE Anti-spam bot is based on [Shieldy](https://github.com/backmeupplz/shie
     tr:
       'Harika! Artık testi geçen yeni üyeler karşılanacak. Lütfen, bu iletiyi kullanmak istediğiniz tebrik metniyle yanıtlayın ($title ve $username kullanabilirsiniz).',
     es:
-      '¡Genial! Ahora los recién llegados que hayan pasado el test no serán saludados. Por favor, responde a este mensaje con el texto de saludo que quieres utilizar (puedes usar $title y $username).',
+      '¡Genial! Ahora los recién llegados que hayan pasado el test serán saludados. Por favor, responde a este mensaje con el texto de saludo que quieres utilizar (puedes usar $title y $username).',
     zh:
       '很棒！现在通过测试的新人不会受到欢迎消息。 请回复此消息，并附上您要使用的问候语（您可以使用$title和$username）。',
     no:
@@ -1738,20 +1737,3 @@ Wikipedia - https://wikipedia.com
     es: 'Reportando a '
   },
 }
-=======
-// Dependencies
-import { Chat } from '../models'
-import { localizations } from './localizations'
-
-export function strings(chat: Chat, key: string) {
-  return (
-    localizations[key][chat.language] ||
-    localizations[key]['en'] ||
-    `🤔 Localization not found, please, contact @borodutch.
-
-Локализация не найдена, пожалуйста, напишите @borodutch.`
-  )
-}
-
-export * from './localizations'
->>>>>>> upstream/master
