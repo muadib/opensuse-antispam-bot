@@ -1722,5 +1722,18 @@ export const localizations = {
     reportToAdmins: {
       en: 'Reporting to ',
       es: 'Reportando a '
+    },
+    rulesText: {
+      en: '*Check the rules*',
+      es: '- Sea cortés y servicial.\n\n- Utilice las etiquetas necesarias para sus #consultas, temas de #soporte, etc.\n\n- Respete a los demás cumpliendo a detalle el reglamento.'
+      //es: '[Reglamento](https://es.opensuse.org/openSUSE:Telegram_Reglamento)\n\n*1.* Sea cortés y servicial.\n\n*2.* Consulte previamente en la web soluciones a su problema.\n\n*3.* Para consultas técnicas aplique la etiqueta #soporte más otra que describa al software en cuestión (p. ej. #plasma) antes o después de formular su pregunta.\n\n*4.* Si necesita compartir textos largos (como logs), *no los pegue en el grupo*; use una aplicación web del tipo pastebin como SUSE Paste y comparta el enlace generado.\n\n*5.* Para consultar la disponibilidad e información de un paquete en los repositorios oficiales, ejecute el comando respectivo a su distribución: `zypper se -d leap nombredelpaquete`.\n\n*6.* Se prohíbe la distribución de contenidos audiovisuales crudos, fuertes o controversiales, por ejemplo: spam, gore, pornografía, pedofilia; intolerancia religiosa, política, racial, etc.\n\n*7.* En caso de transgresión de los puntos 3, 4 y 6 por *tercera ocasión*, se aplicará inmediatamente la *expulsión* del infractor.\n\n*8.* Para reportar un mensaje (como spam) a los administradores, escriba: `/report@opensuse_antispam_bot`.'
+    },
+    rulesButton: {
+      es: '📜 Reglamento',
+      en: '📜 Rules'
+    },
+    rulesURL: {
+      en: 'https://en.opensuse.org/openSUSE:Telegram_Rules',
+      es: 'https://es.opensuse.org/openSUSE:Telegram_Reglamento'
     }
   }
