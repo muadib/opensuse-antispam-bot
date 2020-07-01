@@ -33,28 +33,39 @@ export function setupReport(bot: Telegraf<ContextMessageUpdate>) {
 }
 
 export function setupReport2(bot: Telegraf<ContextMessageUpdate>) {  
-  bot.command('report', sendReport)
+  bot.command(['report', 'spam', 'admin', 'admins'], sendReport)
 }
 
 export function sendReport(ctx: ContextMessageUpdate) {
 
   var adminUsers = strings(ctx.dbchat, 'reportToAdmins')
+  
   try {    
     ctx.telegram.getChatAdministrators(ctx.chat.id)
-    .then(function(data) {
-      
+    .then(function(data) {      
       data.forEach((m) => {
         if (!m.user.is_bot) {
-          adminUsers = adminUsers + '@' + m.user.username + ' '
+          if (m.user.username == undefined)
+            adminUsers = adminUsers + '['+ m.user.first_name +'](tg://user?id='+m.user.id+')' + ' ';
+            else
+            adminUsers = adminUsers + '@' + m.user.username + ' ';          
         }
       })
 
-      return ctx.reply(adminUsers, {
-        disable_web_page_preview: true,
-      })
+      return ctx.replyWithMarkdown(adminUsers, {
+         disable_web_page_preview: true,
+       })
 
     })
-  } catch (err) {
+    .catch (function(err) {
+        console.error(err);
+        if (err.code == 400){
+          return ctx.reply('There are no administrators in the chat', {
+            disable_web_page_preview: true
+          })
+        }
+    });
+  } catch (err) {    
     console.error(err)
     return ctx.reply('@warrensanchez - ', {
       disable_web_page_preview: true,
