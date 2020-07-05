@@ -4,7 +4,7 @@ import { strings } from '../helpers/strings'
 import { checkIfFromReplier } from '../middlewares/checkIfFromReplier'
 import { checkLock } from '../middlewares/checkLock'
 
-const options = [['10', '20', '30'], ['60', '120', '240']]
+const options = [['10', '20', '30'], ['60', '120', '240'], ['480', '960','1920']]
 
 export function setupTimeLimit(bot: Telegraf<ContextMessageUpdate>) {
   bot.command('timeLimit', checkLock, async ctx => {

@@ -35,7 +35,7 @@ import { setupButtonText } from './commands/buttonText'
 import { setupAllowInvitingBots } from './commands/allowInvitingBots'
 import { setupAdmin } from './commands/admin'
 import { setupGreetingButtons } from './commands/greetingButtons'
-import { setupReport, setupReport2 } from './commands/report'
+import { setupReport, setupReport2, setupReport_test } from './commands/report'
 import { setupRules } from './commands/rules'
 
 // Make Telegraph async
@@ -82,6 +82,7 @@ setupNewcomers(bot)
 //Report
 setupReport(bot)
 setupReport2(bot)
+setupReport_test(bot)
 
 // Rules
 setupRules(bot)

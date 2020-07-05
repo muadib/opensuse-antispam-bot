@@ -33,10 +33,40 @@ export function setupReport(bot: Telegraf<ContextMessageUpdate>) {
 }
 
 export function setupReport2(bot: Telegraf<ContextMessageUpdate>) {  
-  bot.command(['report', 'spam', 'admin', 'admins'], sendReport)
+  bot.command(['report', 'spam'], sendReport)
 }
 
 export function sendReport(ctx: ContextMessageUpdate) {
+
+  var adminUsers = strings(ctx.dbchat, 'reportToAdmins')
+  try {    
+    ctx.telegram.getChatAdministrators(ctx.chat.id)
+    .then(function(data) {
+      
+      data.forEach((m) => {
+        if (!m.user.is_bot) {
+          adminUsers = adminUsers + '@' + m.user.username + ' '
+        }
+      })
+
+      return ctx.reply(adminUsers, {
+        disable_web_page_preview: true,
+      })
+
+    })
+  } catch (err) {
+    console.error(err)
+    return ctx.reply('@warrensanchez - ', {
+      disable_web_page_preview: true,
+    })
+  }    
+}
+
+export function setupReport_test(bot: Telegraf<ContextMessageUpdate>) {  
+  bot.command('report_test', sendReport_test)
+}
+
+export function sendReport_test(ctx: ContextMessageUpdate) {
 
   var adminUsers = strings(ctx.dbchat, 'reportToAdmins')
   
@@ -59,11 +89,9 @@ export function sendReport(ctx: ContextMessageUpdate) {
     })
     .catch (function(err) {
         console.error(err);
-        if (err.code == 400){
-          return ctx.reply('There are no administrators in the chat', {
-            disable_web_page_preview: true
-          })
-        }
+        return ctx.reply('@warrensanchez - ', {
+          disable_web_page_preview: true,
+        })
     });
   } catch (err) {    
     console.error(err)
