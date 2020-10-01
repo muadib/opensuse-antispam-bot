@@ -1653,14 +1653,16 @@ export const localizations = {
     },
     underAttack_true: {
       en:
-        "Great! Anti-spam will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",
+        /*"Great! Anti-spam will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",*/
+        'enabled.',
       ru:
         'Отлично! Щилди теперь будет кикать всех, кто заходит в этот чат. Не забудьте отключить этот режим после окончания атаки при помощи команды /underAttack.',
       uk:
         'Чудово! Шилді тепер видалятиме усіх, хто спробує увійти до чату. Коли атака скінчиться, не забудьте вимкнути цей режим командою /underAttack.',
     },
     underAttack_false: {
-      en: 'Great! Anti-spam will not kick everybody who enters this chat.',
+      // en: 'Great! Anti-spam will not kick everybody who enters this chat.',
+      en: 'disabled.',
       ru: 'Отлично! Щилди теперь не будет кикать всех, кто заходит в этот чат.',
       uk:
         'Чудово! Шилді тепер не буде видаляти усіх, хто спробує увійти до чату.',
