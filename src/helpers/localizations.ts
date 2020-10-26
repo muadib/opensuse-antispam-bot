@@ -1222,7 +1222,7 @@ export const localizations = {
       ro: 'Nu sunt un bot',
     },
     only_candidate_can_reply: {
-      en: 'Only the candidate for not being a bot can press this button.',
+      en: 'Only the candidate for being a member can press this button.',
       ru:
         'Только кандидат на то, чтобы быть человеком, может нажимать на эту кнопку.',
       it: 'Solamente il candidato che non è un bot può premere questo bottone.',
@@ -1230,7 +1230,7 @@ export const localizations = {
       uk: 'Тільки кандидат на те, щоб бути людиною, може натискати на цю кнопку.',
       br: 'Apenas o usuário citado pode apertar esse botão.',
       tr: 'Sadece bot olmayan bir aday bu düğmeye basabilir.',
-      es: 'Solo el candidato para no ser un robot puede presionar este botón.',
+      es: 'Solo el candidato a miembro puede presionar este botón.',
       zh: '只有不是机器人的候选人才能按此按钮。',
       no: 'Bare kandidaten som blir testet kan trykke denne knappen.',
       de: 'Nur der User der kein Bot ist, kann diesen Knopf drücken.',
