@@ -4,6 +4,7 @@ README.md
 LICENSE
 docker-compose.yml
 .env.sample
+.env.test
 node_modules
 dist
 design

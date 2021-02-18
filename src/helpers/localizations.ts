@@ -1737,5 +1737,9 @@ export const localizations = {
     rulesURL: {
       en: 'https://en.opensuse.org/openSUSE:Telegram_Rules',
       es: 'https://es.opensuse.org/openSUSE:Telegram_Reglamento'
-    }
+    },
+    telegramChannelText: {
+      en: 'Check more groups and channels [here](https://t.me/opensuse_telegram)',
+      es: 'Más grupos y canales [aquí](https://t.me/opensuse_telegram)'
+    }    
   }

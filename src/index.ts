@@ -37,6 +37,7 @@ import { setupAdmin } from './commands/admin'
 import { setupGreetingButtons } from './commands/greetingButtons'
 import { setupReport, setupReport2, setupReport_test } from './commands/report'
 import { setupRules } from './commands/rules'
+import { setupTelegram } from './commands/telegramChannel'
 
 // Make Telegraph async
 bot.use(noWait)
@@ -86,6 +87,8 @@ setupReport_test(bot)
 
 // Rules
 setupRules(bot)
+
+setupTelegram(bot)
 
 // Catch
 bot.catch(console.log)
