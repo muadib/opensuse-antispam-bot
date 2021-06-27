@@ -1,11 +1,8 @@
 node_modules
 dist
 .env
-<<<<<<< HEAD
 .env.bak
 .env.test
 .now
 .vercel
-=======
 updates.log
->>>>>>> 271878a5c2074fb57ad6f51f283785e34a83310c
