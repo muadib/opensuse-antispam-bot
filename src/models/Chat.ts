@@ -1,6 +1,5 @@
-// Dependencies
-import { prop, Typegoose, arrayProp } from 'typegoose'
-import { Message } from 'telegram-typings'
+import { prop, getModelForClass } from '@typegoose/typegoose'
+import { Message, ChatMember } from 'telegram-typings'
 
 export enum Language {
   ENGLISH = 'en',
@@ -25,6 +24,8 @@ export enum Language {
   ROMANIAN = 'ro',
   SLOVAK = 'sk',
   CATALAN = 'ca',
+  CANTONESE = 'yue',
+  BULGARIAN = 'bg',
 }
 
 export enum CaptchaType {
@@ -50,14 +51,20 @@ export class Candidate {
   messageId?: number
   @prop()
   username?: string
+  @prop()
+  restrictTime?: number
 
   @prop()
-  equation?: Equation
+  equationQuestion?: string
+  @prop()
+  equationAnswer?: string
   @prop()
   imageText?: string
 
   @prop()
   entryMessageId?: number
+  @prop()
+  leaveMessageId?: number
   @prop()
   entryChatId?: number
 }
@@ -67,7 +74,16 @@ export class MessageWrapper {
   message: Message
 }
 
-export class Chat extends Typegoose {
+export class MemberWrapper {
+  @prop({ required: true })
+  id: number
+  @prop({ required: true })
+  timestamp: number
+  @prop({ required: true })
+  member: ChatMember
+}
+
+export class Chat {
   @prop({ required: true, index: true, unique: true })
   id: number
   @prop({ required: true, enum: Language, default: Language.ENGLISH })
@@ -84,9 +100,9 @@ export class Chat extends Typegoose {
   noChannelLinks: boolean
   @prop({ required: true, default: false })
   deleteEntryMessages: boolean
-  @arrayProp({ items: Candidate, default: [] })
+  @prop({ type: Candidate, default: [], index: true })
   candidates: Candidate[]
-  @arrayProp({ items: Candidate, default: [] })
+  @prop({ type: Candidate, default: [], index: true })
   restrictedUsers: Candidate[]
   @prop({ required: true, default: false })
   greetsUsers: boolean
@@ -116,10 +132,25 @@ export class Chat extends Typegoose {
   allowInvitingBots: boolean
   @prop()
   greetingButtons?: string
+  @prop({ required: true, default: false })
+  skipOldUsers: boolean
+  @prop({ required: true, default: false })
+  skipVerifiedUsers: boolean
+  @prop({ required: true, default: false })
+  banForFastRepliesToPosts: boolean
+  @prop({ type: MemberWrapper, required: true, default: [] })
+  members: MemberWrapper[]
+  @prop({ required: true, default: 24 })
+  restrictTime: number
+  @prop({ required: true, default: false })
+  banNewTelegramUsers: boolean
+
+  // mongo
+  _id?: string
 }
 
 // Get Chat model
-export const ChatModel = new Chat().getModelForClass(Chat, {
+export const ChatModel = getModelForClass(Chat, {
   schemaOptions: { timestamps: true },
 })
 
@@ -137,10 +168,18 @@ export async function findChat(id: number) {
 }
 
 export function findChatsWithCandidates() {
-  return ChatModel.find({
-    $or: [
-      { 'candidates.0': { $exists: true } },
-      { 'restrictedUsers.0': { $exists: true } },
-    ],
-  })
+  return ChatModel.find(
+    {
+      $or: [{ candidates: { $gt: [] } }, { restrictedUsers: { $gt: [] } }],
+    },
+    {
+      candidates: 1,
+      restrictedUsers: 1,
+      _id: 1,
+      id: 1,
+      deleteEntryOnKick: 1,
+      banUsers: 1,
+      timeGiven: 1,
+    }
+  )
 }

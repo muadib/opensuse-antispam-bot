@@ -1,15 +1,14 @@
-// Dependencies
-import { Chat } from '../models'
-import { localizations } from './localizations'
+import { Chat } from '@models/Chat'
+import { localizations } from '@helpers/localizations'
 
 export function strings(chat: Chat, key: string) {
   return (
     localizations[key][chat.language] ||
     localizations[key]['en'] ||
-    `🤔 Localization not found.
+    `🤔 Localization not found, please, contact @warrensanchez.
 
-Локализация не найдена, пожалуйста.`
+Локализация не найдена, пожалуйста, напишите @warrensanchez.`
   )
 }
 
-export * from './localizations'
+export * from '@helpers/localizations'

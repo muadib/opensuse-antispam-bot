@@ -1,6 +1,5 @@
-// Dependencies
-import { checkIfErrorDismissable } from './error'
-import { bot } from './bot'
+import { checkIfErrorDismissable } from '@helpers/error'
+import { bot } from '@helpers/bot'
 
 let errorsToReport = []
 
@@ -11,7 +10,7 @@ async function bulkReport() {
   if (!adminChatId) {
     return
   }
-  if (tempErrorsToReport.length > 15) {
+  if (tempErrorsToReport.length > 20) {
     const reportText = tempErrorsToReport.reduce(
       (prev, cur) => `${prev}${cur}\n`,
       ''

@@ -1,7 +1,8 @@
-import { ContextMessageUpdate } from 'telegraf'
+import { isGroup } from '@helpers/isGroup'
+import { Context } from 'telegraf'
 
-export async function checkIfGroup(ctx: ContextMessageUpdate, next: Function) {
-  if (!['group', 'supergroup'].includes(ctx.chat.type)) {
+export async function checkIfGroup(ctx: Context, next: Function) {
+  if (!isGroup(ctx)) {
     return
   }
   return next()

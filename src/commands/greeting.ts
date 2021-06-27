@@ -1,16 +1,18 @@
-// Dependencies
-import { Telegraf, ContextMessageUpdate, Extra } from 'telegraf'
-import { strings, localizations } from '../helpers/strings'
-import { checkLock } from '../middlewares/checkLock'
-import { report } from '../helpers/report'
+import { clarifyIfPrivateMessages } from '@helpers/clarifyIfPrivateMessages'
+import { saveChatProperty } from '@helpers/saveChatProperty'
+import { Telegraf, Context, Extra } from 'telegraf'
+import { strings, localizations } from '@helpers/strings'
+import { checkLock } from '@middlewares/checkLock'
+import { report } from '@helpers/report'
 import { ExtraReplyMessage } from 'telegraf/typings/telegram-types'
+import { clarifyReply } from '@helpers/clarifyReply'
 
-export function setupGreeting(bot: Telegraf<ContextMessageUpdate>) {
+export function setupGreeting(bot: Telegraf<Context>) {
   // Setup command
-  bot.command('greeting', checkLock, async (ctx) => {
+  bot.command('greeting', checkLock, clarifyIfPrivateMessages, async (ctx) => {
     let chat = ctx.dbchat
     chat.greetsUsers = !chat.greetsUsers
-    chat = await chat.save()
+    await saveChatProperty(chat, 'greetsUsers')
     await ctx.replyWithMarkdown(
       strings(
         ctx.dbchat,
@@ -23,8 +25,12 @@ export function setupGreeting(bot: Telegraf<ContextMessageUpdate>) {
       Extra.inReplyTo(ctx.message.message_id)
     )
     if (chat.greetingMessage && chat.greetsUsers) {
-      ctx.telegram.sendCopy(chat.id, chat.greetingMessage.message)
+      chat.greetingMessage.message.chat = undefined
+      await ctx.telegram.sendCopy(chat.id, chat.greetingMessage.message, {
+        entities: chat.greetingMessage.message.entities,
+      })
     }
+    await clarifyReply(ctx)
   })
   // Setup checker
   bot.use(async (ctx, next) => {
@@ -46,7 +52,7 @@ export function setupGreeting(bot: Telegraf<ContextMessageUpdate>) {
         !ctx.message.reply_to_message.from ||
         !ctx.message.reply_to_message.from.username ||
         ctx.message.reply_to_message.from.username !==
-          (bot as any).options.username
+          (bot as any).botInfo.username
       ) {
         return
       }
@@ -68,7 +74,7 @@ export function setupGreeting(bot: Telegraf<ContextMessageUpdate>) {
       ctx.dbchat.greetingMessage = {
         message: ctx.message,
       }
-      await ctx.dbchat.save()
+      await saveChatProperty(ctx.dbchat, 'greetingMessage')
       ctx.reply(
         strings(ctx.dbchat, 'greetsUsers_message_accepted'),
         Extra.inReplyTo(ctx.message.message_id) as ExtraReplyMessage

@@ -1,13 +1,14 @@
-// Dependencies
 import * as mongoose from 'mongoose'
+import { setGlobalOptions, Severity } from '@typegoose/typegoose'
 
-// Connect to mongoose
 mongoose.connect(process.env.MONGO, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 
-// Export models
-export * from './Chat'
-export * from './CappedMessage'
+setGlobalOptions({
+  options: {
+    allowMixed: Severity.ALLOW,
+  },
+})

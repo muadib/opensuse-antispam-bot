@@ -1,15 +1,16 @@
-// Dependencies
-import { Telegraf, ContextMessageUpdate, Extra } from 'telegraf'
-import { strings } from '../helpers/strings'
-import { checkIfFromReplier } from '../middlewares/checkIfFromReplier'
-import { CaptchaType } from '../models'
-import { checkLock } from '../middlewares/checkLock'
+import { clarifyIfPrivateMessages } from '@helpers/clarifyIfPrivateMessages'
+import { saveChatProperty } from '@helpers/saveChatProperty'
+import { Telegraf, Context, Extra } from 'telegraf'
+import { strings } from '@helpers/strings'
+import { checkIfFromReplier } from '@middlewares/checkIfFromReplier'
+import { CaptchaType } from '@models/Chat'
+import { checkLock } from '@middlewares/checkLock'
 
-export function setupCaptcha(bot: Telegraf<ContextMessageUpdate>) {
-  bot.command('captcha', checkLock, ctx => {
+export function setupCaptcha(bot: Telegraf<Context>) {
+  bot.command('captcha', checkLock, clarifyIfPrivateMessages, (ctx) => {
     ctx.replyWithMarkdown(
       strings(ctx.dbchat, 'captcha'),
-      Extra.inReplyTo(ctx.message.message_id).markup(m =>
+      Extra.inReplyTo(ctx.message.message_id).markup((m) =>
         m.inlineKeyboard([
           m.callbackButton(strings(ctx.dbchat, 'simple'), 'simple'),
           m.callbackButton(strings(ctx.dbchat, 'digits'), 'digits'),
@@ -23,10 +24,10 @@ export function setupCaptcha(bot: Telegraf<ContextMessageUpdate>) {
   bot.action(
     ['simple', 'digits', 'button', 'image'],
     checkIfFromReplier,
-    async ctx => {
+    async (ctx) => {
       let chat = ctx.dbchat
       chat.captchaType = ctx.callbackQuery.data as CaptchaType
-      chat = await chat.save()
+      await saveChatProperty(chat, 'captchaType')
       const message = ctx.callbackQuery.message
 
       ctx.telegram.editMessageText(

@@ -1,12 +1,13 @@
-// Dependencies
-import { Telegraf, ContextMessageUpdate, Extra } from 'telegraf'
-import { strings } from '../helpers/strings'
-import { Language } from '../models'
-import { checkIfFromReplier } from '../middlewares/checkIfFromReplier'
-import { checkLock } from '../middlewares/checkLock'
+import { clarifyIfPrivateMessages } from '@helpers/clarifyIfPrivateMessages'
+import { saveChatProperty } from '@helpers/saveChatProperty'
+import { Telegraf, Context, Extra } from 'telegraf'
+import { strings } from '@helpers/strings'
+import { Language } from '@models/Chat'
+import { checkIfFromReplier } from '@middlewares/checkIfFromReplier'
+import { checkLock } from '@middlewares/checkLock'
 
-export function setupLanguage(bot: Telegraf<ContextMessageUpdate>) {
-  bot.command('language', checkLock, (ctx) => {
+export function setupLanguage(bot: Telegraf<Context>) {
+  bot.command('language', checkLock, clarifyIfPrivateMessages, (ctx) => {
     ctx.replyWithMarkdown(
       strings(ctx.dbchat, 'language_shieldy'),
       Extra.webPreview(false)
@@ -57,6 +58,14 @@ export function setupLanguage(bot: Telegraf<ContextMessageUpdate>) {
               m.callbackButton('Slovak', 'sk'),
               m.callbackButton('Catalan', 'ca'),
             ],
+            [
+              m.callbackButton('Cantonese', 'yue'),
+              m.callbackButton('Hungarian', 'hu'),
+            ],
+            [
+              m.callbackButton('Finnish', 'fi'),
+              m.callbackButton('Bulgarian', 'bg'),
+            ],
           ])
         )
     )
@@ -86,12 +95,16 @@ export function setupLanguage(bot: Telegraf<ContextMessageUpdate>) {
       'ro',
       'sk',
       'ca',
+      'yue',
+      'hu',
+      'fi',
+      'bg',
     ],
     checkIfFromReplier,
     async (ctx) => {
       let chat = ctx.dbchat
       chat.language = ctx.callbackQuery.data as Language
-      chat = await chat.save()
+      await saveChatProperty(chat, 'language')
       const message = ctx.callbackQuery.message
 
       ctx.telegram.editMessageText(
