@@ -1,9 +1,7 @@
-// Dependencies
-import { prop, Typegoose } from 'typegoose'
-import { Message } from 'telegram-typings'
-import { bot } from '../helpers/bot'
+import { deleteMessageSafeWithBot } from '@helpers/deleteMessageSafe'
+import { getModelForClass, prop } from '@typegoose/typegoose'
 
-export class CappedMessage extends Typegoose {
+export class CappedMessage {
   @prop({ required: true, index: true })
   message_id: number
   @prop({ required: true, index: true })
@@ -11,24 +9,20 @@ export class CappedMessage extends Typegoose {
   @prop({ required: true, index: true })
   chat_id: number
 
-  @prop({ required: true })
-  message: Message
+  // mongodb timestamp
+  createdAt: Date
 }
 
-export const CappedMessageModel = new CappedMessage().getModelForClass(
-  CappedMessage,
-  {
-    schemaOptions: { timestamps: true, capped: 1000 * 1024 },
-  }
-)
+export const CappedMessageModel = getModelForClass(CappedMessage, {
+  schemaOptions: { timestamps: true },
+})
 
 export async function removeMessages(chatId: number, fromId: number) {
-  const messages = await CappedMessageModel.find({ chatId, fromId })
-  messages.forEach(async message => {
-    try {
-      await bot.telegram.deleteMessage(chatId, message.message_id)
-    } catch (err) {
-      // Do nothing
-    }
+  const messages = await CappedMessageModel.find({
+    chat_id: chatId,
+    from_id: fromId,
+  })
+  messages.forEach(async (message) => {
+    await deleteMessageSafeWithBot(chatId, message.message_id)
   })
 }

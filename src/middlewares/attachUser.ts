@@ -1,15 +1,24 @@
-// Dependencies
-import { bot } from '../helpers/bot'
-import { findChat } from '../models'
-import { ContextMessageUpdate } from 'telegraf'
-import { report } from '../helpers/report'
+import { findChat } from '@models/Chat'
+import { Context } from 'telegraf'
 
-export async function attachUser(ctx: ContextMessageUpdate, next) {
-  try {
-    const chat = await findChat(ctx.chat.id)
-    ctx.dbchat = chat
-  } catch (err) {
-    await report(err)
+export async function attachUser(ctx: Context, next) {
+  if (ctx.update.message?.date && ctx.update.message?.text === '/help') {
+    console.log(
+      'Got to attachUser on help',
+      Date.now() / 1000 - ctx.update.message?.date
+    )
   }
-  next()
+  // Just drop the update if there is no chat
+  if (!ctx.chat) {
+    return
+  }
+  const chat = await findChat(ctx.chat.id)
+  if (ctx.update.message?.date && ctx.update.message?.text === '/help') {
+    console.log(
+      'Got to attachUser on help, found user',
+      Date.now() / 1000 - ctx.update.message?.date
+    )
+  }
+  ctx.dbchat = chat
+  return next()
 }

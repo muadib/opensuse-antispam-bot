@@ -1,28 +1,33 @@
-// Dependencies
-import { Telegraf, ContextMessageUpdate, Extra } from 'telegraf'
-import { strings, localizations } from '../helpers/strings'
-import { checkLock } from '../middlewares/checkLock'
-import { report } from '../helpers/report'
+import { clarifyReply } from '@helpers/clarifyReply'
+import { clarifyIfPrivateMessages } from '@helpers/clarifyIfPrivateMessages'
+import { saveChatProperty } from '@helpers/saveChatProperty'
+import { Telegraf, Context, Extra } from 'telegraf'
+import { strings, localizations } from '@helpers/strings'
+import { checkLock } from '@middlewares/checkLock'
+import { report } from '@helpers/report'
 import { ExtraReplyMessage } from 'telegraf/typings/telegram-types'
 
-export function setupGreetingButtons(bot: Telegraf<ContextMessageUpdate>) {
+export function setupGreetingButtons(bot: Telegraf<Context>) {
   // Setup command
-  bot.command('greetingButtons', checkLock, async (ctx) => {
-    let chat = ctx.dbchat
-    chat.greetsUsers = !chat.greetsUsers
-    chat = await chat.save()
-    await ctx.replyWithMarkdown(
-      `${strings(ctx.dbchat, 'greetingButtons')}`,
-      Extra.inReplyTo(ctx.message.message_id).webPreview(false)
-    )
-    await ctx.replyWithMarkdown(
-      `<code>${
-        ctx.dbchat.greetingButtons ||
-        strings(ctx.dbchat, 'greetingButtonsEmpty')
-      }</code>`,
-      Extra.webPreview(false).HTML(true)
-    )
-  })
+  bot.command(
+    'greetingButtons',
+    checkLock,
+    clarifyIfPrivateMessages,
+    async (ctx) => {
+      await ctx.replyWithMarkdown(
+        `${strings(ctx.dbchat, 'greetingButtons')}`,
+        Extra.inReplyTo(ctx.message.message_id).webPreview(false)
+      )
+      await ctx.replyWithMarkdown(
+        `<code>${
+          ctx.dbchat.greetingButtons ||
+          strings(ctx.dbchat, 'greetingButtonsEmpty')
+        }</code>`,
+        Extra.webPreview(false).HTML(true)
+      )
+      await clarifyReply(ctx)
+    }
+  )
   // Setup checker
   bot.use(async (ctx, next) => {
     try {
@@ -39,7 +44,7 @@ export function setupGreetingButtons(bot: Telegraf<ContextMessageUpdate>) {
         !ctx.message.reply_to_message.from ||
         !ctx.message.reply_to_message.from.username ||
         ctx.message.reply_to_message.from.username !==
-          (bot as any).options.username
+          (bot as any).botInfo.username
       ) {
         return
       }
@@ -61,7 +66,7 @@ export function setupGreetingButtons(bot: Telegraf<ContextMessageUpdate>) {
         if (parts.length !== 2) {
           // Default
           ctx.dbchat.greetingButtons = undefined
-          await ctx.dbchat.save()
+          await saveChatProperty(ctx.dbchat, 'greetingButtons')
           return
         } else {
           result.push(component)
@@ -69,7 +74,7 @@ export function setupGreetingButtons(bot: Telegraf<ContextMessageUpdate>) {
       }
       // Save text
       ctx.dbchat.greetingButtons = result.join('\n')
-      await ctx.dbchat.save()
+      await saveChatProperty(ctx.dbchat, 'greetingButtons')
       ctx.reply(
         strings(ctx.dbchat, 'greetsUsers_message_accepted'),
         Extra.inReplyTo(ctx.message.message_id) as ExtraReplyMessage

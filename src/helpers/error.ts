@@ -6,7 +6,6 @@ export function checkIfErrorDismissable(error: Error) {
     'not in the chat',
     'need to be inviter of a user',
     'matching document found for id',
-    'Too Many Requests: retry after',
     'bot is not a member',
     'user is an administrator of the chat',
     'USER_NOT_PARTICIPANT',
@@ -20,6 +19,7 @@ export function checkIfErrorDismissable(error: Error) {
     'message identifier is not specified',
     'demote chat creator',
     'USER_BANNED_IN_CHANNEL',
+    'Too Many Requests',
   ]
   for (const message of dismissableMessages) {
     if (error.message.indexOf(message) > -1) {

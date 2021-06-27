@@ -1,8 +1,7 @@
-// Dependencies
-import { Telegraf, ContextMessageUpdate } from 'telegraf'
-import { checkSuperAdmin } from '../middlewares/checkSuperAdmin'
+import { Telegraf, Context } from 'telegraf'
+import { checkSuperAdmin } from '@middlewares/checkSuperAdmin'
 
-export function setupAdmin(bot: Telegraf<ContextMessageUpdate>) {
+export function setupAdmin(bot: Telegraf<Context>) {
   bot.command('delete', checkSuperAdmin, async (ctx) => {
     if (
       !ctx ||

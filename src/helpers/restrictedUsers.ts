@@ -1,33 +1,37 @@
-import { Lock } from 'semaphore-async-await'
-import { Chat, Candidate } from '../models'
+import { report } from '@helpers/report'
+import { Chat, Candidate, ChatModel } from '@models/Chat'
 import { User } from 'telegraf/typings/telegram-types'
-import { InstanceType } from 'typegoose'
 
 export async function modifyRestrictedUsers(
-  chat: InstanceType<Chat>,
+  chat: Chat,
   add: boolean,
   candidatesAndUsers: Array<Candidate | User>
 ) {
-  const lock = new Lock()
-  await lock.acquire()
+  if (!candidatesAndUsers.length) {
+    return
+  }
   try {
     if (add) {
-      const candidatesIds = chat.restrictedUsers.map((c) => c.id)
-      for (const candidate of candidatesAndUsers) {
-        if (!candidatesIds.includes(candidate.id)) {
-          chat.restrictedUsers.push(candidate as Candidate)
+      await ChatModel.updateOne(
+        { _id: chat._id },
+        {
+          $push: {
+            restrictedUsers: candidatesAndUsers.map((v: Candidate) => {
+              v.restrictTime = chat.restrictTime || 24
+              return v
+            }),
+          },
         }
-      }
+      )
     } else {
-      const ids = candidatesAndUsers.map((v) => v.id)
-      chat.restrictedUsers = chat.restrictedUsers.filter(
-        (c) => !ids.includes(c.id)
+      const candidatesIds = candidatesAndUsers.map((c) => c.id)
+      await ChatModel.updateOne(
+        { _id: chat._id },
+        { $pull: { restrictedUsers: { id: { $in: candidatesIds } } } },
+        { multi: true }
       )
     }
-    await chat.save()
   } catch (err) {
-    console.error('modifyRestrictedUsers', err)
-  } finally {
-    lock.release()
+    report(err)
   }
 }

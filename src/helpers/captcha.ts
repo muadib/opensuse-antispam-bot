@@ -1,5 +1,5 @@
 import { create } from 'svg-captcha'
-import { convert } from 'convert-svg-to-png'
+import * as sharp from 'sharp'
 
 export async function getImageCaptcha() {
   const letters = 'abcdefghijklmnopqrstuvwxyz'
@@ -12,9 +12,7 @@ export async function getImageCaptcha() {
     height: 100,
   })
   return {
-    png: await convert(catpcha.data, {
-      puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] },
-    }),
+    png: await sharp(Buffer.from(catpcha.data)).png().toBuffer(),
     text: catpcha.text,
   }
 }
