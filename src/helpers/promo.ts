@@ -1,34 +1,20 @@
 import { isOver10000 } from '@helpers/goldenBorodutchSubCount'
 
 export const promoAdditions = {
-  ru: () =>
-    isOver10000()
-      ? 'При поддержке <a href="https://todorant.com/?utm_source=shieldy">Тудуранта</a>'
-      : 'При поддержке <a href="https://t.me/golden_borodutch">Золота Бородача</a>',
   en: () =>
-    'Powered by <a href="https://todorant.com/?utm_source=shieldy">Todorant</a>',
+    '',
 }
 
 export const promoAdditionsWithoutHtml = {
-  ru: () =>
-    isOver10000() ? 'При поддержке Тудуранта' : 'При поддержке Золота Бородача',
-  en: () => 'Powered by Todorant',
+  en: () => '',
 }
 
 export const promoLinkLengths = {
-  ru: () =>
-    isOver10000()
-      ? { offset: 'При поддержке '.length, length: 'Тудуранта'.length }
-      : { offset: 'При поддержке '.length, length: 'Золота Бородача'.length },
-  en: () => ({ offset: 'Powered by '.length, length: 'Todorant'.length }),
+    en: () => ({ offset: ''.length, length: ''.length }),
 }
 
 export const promoUrl = {
-  ru: () =>
-    isOver10000()
-      ? 'https://todorant.com/?utm_source=shieldy'
-      : 'https://t.me/golden_borodutch',
-  en: () => 'https://todorant.com/?utm_source=shieldy',
+   en: () => '',
 }
 
 export const promoExceptions = [
@@ -60,5 +46,6 @@ export const promoExceptions = [
   -1001166354679,
   -1001456580426,
   -1001207646926,
-  -1001396223082,
+  -1001396223082
+  //,  -1001225410749 //test group
 ]

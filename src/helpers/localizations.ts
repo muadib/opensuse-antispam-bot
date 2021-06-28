@@ -1287,238 +1287,238 @@ export const localizations = {
   },
   deleteEntryOnKick_true: {
     en:
-      'Great! Shieldy will remove entry messages of the users who failed captcha.',
+      'Great! antispam-bot will remove entry messages of the users who failed captcha.',
     ru:
       'Щилди будет удалять сообщения о входе пользователей, проваливших капчу.',
     uk:
       'Чудово! Шилді тепер видалятиме усі вхідні повідомлення від користувачів, які провалили капчу.',
     tr:
-      'Harika! Shieldy, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldıracak.',
+      'Harika! antispam-bot, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldıracak.',
     es:
-      'Perfecto, Shieldy eliminará los mensajes de los recién llegados que no hayan superado el CAPTCHA.',
-    zh: '很棒！Shieldy将删除验证码失败用户的加入消息。',
+      'Perfecto, antispam-bot eliminará los mensajes de los recién llegados que no hayan superado el CAPTCHA.',
+    zh: '很棒！antispam-bot将删除验证码失败用户的加入消息。',
     de:
-      'Top! Shieldy wird nun die Beitrittsnachrichten entfernen, wenn ein User den Captcha Test nicht besteht.',
+      'Top! antispam-bot wird nun die Beitrittsnachrichten entfernen, wenn ein User den Captcha Test nicht besteht.',
     sk:
-      'Super! Shieldy odstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
+      'Super! antispam-bot odstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
     ja:
-      '素晴らしいです！Shieldyは、キャプチャを失敗したユーザーの入室時のメッセージを削除します。',
+      '素晴らしいです！antispam-botは、キャプチャを失敗したユーザーの入室時のメッセージを削除します。',
     ro:
-      'Minunat! Shieldy va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
+      'Minunat! antispam-bot va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
     ca:
-      "Entesos, a partir d'ara en Shieldy esborrarà tots els missatges dels nouvinguts que no hagin superat la prova.",
+      "Entesos, a partir d'ara en antispam-bot esborrarà tots els missatges dels nouvinguts que no hagin superat la prova.",
     br:
-      'Boa! Shieldy removerá mensagens de entrada dos usuários que erraram o captcha.',
-    he: 'מעולה! Shieldy ימחק הודעות כניסה של משתמשים שנכשלו במבחן.',
+      'Boa! antispam-bot removerá mensagens de entrada dos usuários que erraram o captcha.',
+    he: 'מעולה! antispam-bot ימחק הודעות כניסה של משתמשים שנכשלו במבחן.',
     no:
-      'Supert! Shieldy vil fjerne inngangsmeldingene til brukere som ikke består captcha-testen.',
-    yue: '好。由而家開始，Shieldy 會自動刪除驗證失敗用戶嘅入羣訊息。',
+      'Supert! antispam-bot vil fjerne inngangsmeldingene til brukere som ikke består captcha-testen.',
+    yue: '好。由而家開始，antispam-bot 會自動刪除驗證失敗用戶嘅入羣訊息。',
     hu:
-      'Nagyszerű! A Shieldy eltávolítja a belépési üzenetet, ha a felhasználó elbukik a teszten.',
+      'Nagyszerű! A antispam-bot eltávolítja a belépési üzenetet, ha a felhasználó elbukik a teszten.',
     fr:
-      "Super! Shieldy va supprimer les messages d'accueil des utilisateurs qui ont échoué au captcha.",
+      "Super! antispam-bot va supprimer les messages d'accueil des utilisateurs qui ont échoué au captcha.",
     bg:
-      'Чудесно! Shieldy ще премахне съобщенията за влизане на потребителите, които НЕ са отговорили на captcha. ',
+      'Чудесно! antispam-bot ще премахне съобщенията за влизане на потребителите, които НЕ са отговорили на captcha. ',
   },
   deleteEntryOnKick_false: {
     en:
-      'Great! Shieldy will not remove entry messages of the users who failed captcha.',
+      'Great! antispam-bot will not remove entry messages of the users who failed captcha.',
     ru:
       'Великолепно! Щилди не будет удалять сообщения о входе пользователей, проваливших капчу.',
     uk:
       'Чудово. Шилді не буде видаляти вхідні повідомлення від користувачів, які провалили капчу.',
     tr:
-      'Harika! Shieldy, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldırmayacak.',
+      'Harika! antispam-bot, CAPTCHA testinden başarısız olan kullanıcıların giriş mesajlarını kaldırmayacak.',
     es:
-      'Perfecto, Shieldy no eliminará los mensajes de los recién llegados que no hayan superado el CAPTCHA.',
-    zh: '很棒！Shieldy将不会删除验证码失败用户的加入消息。',
+      'Perfecto, antispam-bot no eliminará los mensajes de los recién llegados que no hayan superado el CAPTCHA.',
+    zh: '很棒！antispam-bot将不会删除验证码失败用户的加入消息。',
     de:
-      'Hammer! Shieldy wird nun die Beitrittsnachrichten nicht entfernen, wenn ein User den Captcha Test nicht besteht.',
+      'Hammer! antispam-bot wird nun die Beitrittsnachrichten nicht entfernen, wenn ein User den Captcha Test nicht besteht.',
     sk:
-      'Super! Shieldy neodstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
+      'Super! antispam-bot neodstráni správy o vstupe nováčikov do četu, ak neprejdú testom captcha.',
     ja:
-      '素晴らしいです！Shieldyは、キャプチャを失敗したユーザーの入室時のメッセージを削除しません。',
+      '素晴らしいです！antispam-botは、キャプチャを失敗したユーザーの入室時のメッセージを削除しません。',
     ro:
-      'Minunat! Shieldy nu va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
+      'Minunat! antispam-bot nu va șterge fiecare mesaj al utilizatorilor ce nu au trecut testul captcha.',
     ca:
-      "Entesos, a partir d'ara en Shieldy no esborrarà tots els missatges dels nouvinguts que no hagin superat la prova.",
+      "Entesos, a partir d'ara en antispam-bot no esborrarà tots els missatges dels nouvinguts que no hagin superat la prova.",
     br:
-      'Boa! Shieldy não removerá mensagens de entrada dos usuários que erraram o captcha.',
-    he: 'מעולה! Shieldy לא ימחק הודעות כניסה של מתמשים שנכשלנו במבחן.',
+      'Boa! antispam-bot não removerá mensagens de entrada dos usuários que erraram o captcha.',
+    he: 'מעולה! antispam-bot לא ימחק הודעות כניסה של מתמשים שנכשלנו במבחן.',
     no:
-      'Supert! Shieldy vil ikke fjerne inngangsmeldingene til brukere som ikke består captcha-testen.',
-    yue: '好。由而家開始，Shieldy 唔會自動刪除驗證失敗用戶嘅入羣訊息。',
+      'Supert! antispam-bot vil ikke fjerne inngangsmeldingene til brukere som ikke består captcha-testen.',
+    yue: '好。由而家開始，antispam-bot 唔會自動刪除驗證失敗用戶嘅入羣訊息。',
     hu:
-      'Nagyszerű! A Shieldy nem távolítja el a belépési üzenetet, ha a felhasználó elbukik a teszten.',
+      'Nagyszerű! A antispam-bot nem távolítja el a belépési üzenetet, ha a felhasználó elbukik a teszten.',
     fr:
-      "C'est noté! Shieldy ne va plus supprimer les messages d'accueil des utilisateurs qui ont échoué au captcha.",
+      "C'est noté! antispam-bot ne va plus supprimer les messages d'accueil des utilisateurs qui ont échoué au captcha.",
     bg:
-      'Чудесно! Shieldy няма да премахва съобщения за влизане на потребители, които НЕ са успели с captcha. ',
+      'Чудесно! antispam-bot няма да премахва съобщения за влизане на потребители, които НЕ са успели с captcha. ',
   },
   cas_true: {
-    en: 'Great! Shieldy will now use Combot Anti-Spam.',
+    en: 'Great! antispam-bot will now use Combot Anti-Spam.',
     ru: 'Великолепно! Щилди теперь будет использовать Combot Anti-Spam.',
     uk: 'Чудово! Шилді тепер використовує Combot Anti-Spam.',
-    tr: 'Harika! Shieldy, artık Combot Anti-Spam kullanacak.',
+    tr: 'Harika! antispam-bot, artık Combot Anti-Spam kullanacak.',
     es:
-      '¡Entendido! Ahora Shieldy utilizará Combot Anti-Spam para combatir el spam.',
-    sk: 'Skvelé! Shieldy odteraz bude používať Combot Anti-Spam.',
+      '¡Entendido! Ahora antispam-bot utilizará Combot Anti-Spam para combatir el spam.',
+    sk: 'Skvelé! antispam-bot odteraz bude používať Combot Anti-Spam.',
     ca:
-      "Molt bé, a partir d'ara en Shieldy ferà servir Combot Anti-Spam per a combatre els missatges brossa.",
-    br: 'Boa! Shieldy agora usará o Combot Anti-Spam.',
-    he: 'מעולה! Shieldy מעכשיו ישתמש ב-Combot Anti-Spam.',
-    no: 'Supert! Shieldy vil nå bruke Combot Anti-Spam.',
-    yue: '好。由而家開始，Shieldy 會使用 Combot 提供嘅防滋擾功能。',
-    hu: 'Nagyszerű! A Shieldy ezentúl használja a Combot Anti-Spam megoldást.',
-    fr: 'Super! Shieldy va maintenant utiliser Combot Anti-Spam.',
-    bg: 'Страхотно! Shieldy вече ще използва Combot Anti-Spam. ',
+      "Molt bé, a partir d'ara en antispam-bot ferà servir Combot Anti-Spam per a combatre els missatges brossa.",
+    br: 'Boa! antispam-bot agora usará o Combot Anti-Spam.',
+    he: 'מעולה! antispam-bot מעכשיו ישתמש ב-Combot Anti-Spam.',
+    no: 'Supert! antispam-bot vil nå bruke Combot Anti-Spam.',
+    yue: '好。由而家開始，antispam-bot 會使用 Combot 提供嘅防滋擾功能。',
+    hu: 'Nagyszerű! A antispam-bot ezentúl használja a Combot Anti-Spam megoldást.',
+    fr: 'Super! antispam-bot va maintenant utiliser Combot Anti-Spam.',
+    bg: 'Страхотно! antispam-bot вече ще използва Combot Anti-Spam. ',
   },
   cas_false: {
-    en: 'Great! Shieldy will not use Combot Anti-Spam now.',
+    en: 'Great! antispam-bot will not use Combot Anti-Spam now.',
     ru: 'Великолепно! Щилди теперь не будет использовать Combot Anti-Spam.',
     uk: 'Чудово! Шилді тепер не використовує Combot Anti-Spam.',
-    tr: 'Harika! Shieldy, artık Combot Anti-Spam kullanmayacak.',
+    tr: 'Harika! antispam-bot, artık Combot Anti-Spam kullanmayacak.',
     es:
-      '¡Entendido! Ahora Shieldy no utilizará Combot Anti-Spam para combatir el spam.',
-    sk: 'Skvelé! Shieldy odteraz nebude používať Combot Anti-Spam.',
+      '¡Entendido! Ahora antispam-bot no utilizará Combot Anti-Spam para combatir el spam.',
+    sk: 'Skvelé! antispam-bot odteraz nebude používať Combot Anti-Spam.',
     ca:
-      "Molt bé, a partir d'ara en Shieldy no ferà servir Combot Anti-Spam per a combatre els missatges brossa.",
-    br: 'Boa! Shieldy não usará o Combot Anti-Spam agora.',
-    he: 'מעולה! Shieldy מעכשיו לא ישתמש ב-Combot Anti-Spam.',
-    no: 'Supert! Shieldy vil nå ikke bruke Combot Anti-Spam.',
-    yue: '好。由而家開始，Shieldy 會停用 Combot 提供嘅防滋擾功能。',
+      "Molt bé, a partir d'ara en antispam-bot no ferà servir Combot Anti-Spam per a combatre els missatges brossa.",
+    br: 'Boa! antispam-bot não usará o Combot Anti-Spam agora.',
+    he: 'מעולה! antispam-bot מעכשיו לא ישתמש ב-Combot Anti-Spam.',
+    no: 'Supert! antispam-bot vil nå ikke bruke Combot Anti-Spam.',
+    yue: '好。由而家開始，antispam-bot 會停用 Combot 提供嘅防滋擾功能。',
     hu:
-      'Nagyszerű! A Shieldy ezentúl nemhasználja a Combot Anti-Spam megoldást.',
-    fr: "Ok! Shieldy n'utilisera pas Combot Anti-Spam.",
-    bg: 'Страхотно! Shieldy няма да използва Combot Anti-Spam сега. ',
+      'Nagyszerű! A antispam-bot ezentúl nemhasználja a Combot Anti-Spam megoldást.',
+    fr: "Ok! antispam-bot n'utilisera pas Combot Anti-Spam.",
+    bg: 'Страхотно! antispam-bot няма да използва Combot Anti-Spam сега. ',
   },
   underAttack_true: {
     en:
-      /*"Great! Shieldy will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",*/
+      /*"Great! antispam-bot will now kick everybody who enters this chat. Don't forget to turn this mode off when attack is over with /underAttack.",*/
       'enabled',
     ru:
       'Отлично! Щилди теперь будет кикать всех, кто заходит в этот чат. Не забудьте отключить этот режим после окончания атаки при помощи команды /underAttack.',
     uk:
       'Чудово! Шилді тепер видалятиме усіх, хто спробує увійти до чату. Коли атака скінчиться, не забудьте вимкнути цей режим командою /underAttack.',
     es:
-      '¡Entendido! Ahora Shieldy expulsará a todo aquel que entre en este chat. No olvides desactivar este modo cuando el ataque haya cesado, para ello utiliza el comando /underAttack.',
+      '¡Entendido! Ahora antispam-bot expulsará a todo aquel que entre en este chat. No olvides desactivar este modo cuando el ataque haya cesado, para ello utiliza el comando /underAttack.',
     ca:
-      "Molt bé, a partir d'ara en Shieldy expulsarà a tothom que vulgui entrar en aquest xat. Procura desactivar aquest mode quan l'atac s'hagi esveït; per això fes servir la comanda /underAttack.",
+      "Molt bé, a partir d'ara en antispam-bot expulsarà a tothom que vulgui entrar en aquest xat. Procura desactivar aquest mode quan l'atac s'hagi esveït; per això fes servir la comanda /underAttack.",
     br:
-      'Boa! Shieldy vai kickar todos que entram neste bate-papo. Não se esqueça de desligar este modo quando o ataque acabar com /underAttack.',
+      'Boa! antispam-bot vai kickar todos que entram neste bate-papo. Não se esqueça de desligar este modo quando o ataque acabar com /underAttack.',
     he:
-      'מעולה! Shieldy מעכשיו ירחיק את כל מי שיכנס לשיחוח. לא לשכוח לבטל את המצב כשההתקפה נגמרת בעזרת /underAttack.',
+      'מעולה! antispam-bot מעכשיו ירחיק את כל מי שיכנס לשיחוח. לא לשכוח לבטל את המצב כשההתקפה נגמרת בעזרת /underAttack.',
     no:
-      'Supert! Shieldy vil nå sparke alle som blir med i chatten. Ikke glem å slå av denne modusen når angrepet er over med /underAttack.',
+      'Supert! antispam-bot vil nå sparke alle som blir med i chatten. Ikke glem å slå av denne modusen når angrepet er over med /underAttack.',
     yue:
-      '由而家開始，Shieldy 會踢除所有嘗試入羣嘅人。等滋擾攻擊結束後，記得用 /underAttack 停用當前模式。',
+      '由而家開始，antispam-bot 會踢除所有嘗試入羣嘅人。等滋擾攻擊結束後，記得用 /underAttack 停用當前模式。',
     hu:
-      'Nagyszerű! A Shieldy mostantól minden új csatlakozót kivág a csatornáról. Ne felejtsd el kikapcsolni ezt a beállítást, amikor a támadás véget ár a /underAttack paranccsal.',
+      'Nagyszerű! A antispam-bot mostantól minden új csatlakozót kivág a csatornáról. Ne felejtsd el kikapcsolni ezt a beállítást, amikor a támadás véget ár a /underAttack paranccsal.',
     fr:
-      "Ok! Shieldy va maintenant expulser tous ceux qui entreront dans ce groupe. N'oubliez pas de désactiver ce mode lorsque l'attaque est terminée via la commande /underAttack.",
+      "Ok! antispam-bot va maintenant expulser tous ceux qui entreront dans ce groupe. N'oubliez pas de désactiver ce mode lorsque l'attaque est terminée via la commande /underAttack.",
     bg:
-      'Чудесно! Shieldy ще изхвърля всички, които влязат в тази група. Не забравяйте да изключите този режим, когато атаката приключи с /underAttack.',
+      'Чудесно! antispam-bot ще изхвърля всички, които влязат в тази група. Не забравяйте да изключите този режим, когато атаката приключи с /underAttack.',
   },
   underAttack_false: {
     en: 
-      /*'Great! Shieldy will not kick everybody who enters this chat.',*/
+      /*'Great! antispam-bot will not kick everybody who enters this chat.',*/
       'disabled',
     ru: 'Отлично! Щилди теперь не будет кикать всех, кто заходит в этот чат.',
     uk:
       'Чудово! Шилді тепер не буде видаляти усіх, хто спробує увійти до чату.',
     es:
-      '¡Entendido! Ahora Shieldy ya no continuará expulsando a nadie que entre en este chat.',
+      '¡Entendido! Ahora antispam-bot ya no continuará expulsando a nadie que entre en este chat.',
     ca:
-      "Molt bé, a partir d'ara en Shieldy ja no continuarà expulsant a ningú que vulgui entrar en aquest xat",
-    br: 'Boa! Shieldy não vai kickar todos que entram neste bate-papo.',
-    he: 'מעולה! Shieldy לא ירחיק את כל מי שנכנס לשיחוח.',
-    no: 'Supert! Shieldy vil ikke sparke alle som blir med i chatten.',
-    yue: '好。Shieldy 而家唔會再踢除所有嘗試入 group 嘅人。',
+      "Molt bé, a partir d'ara en antispam-bot ja no continuarà expulsant a ningú que vulgui entrar en aquest xat",
+    br: 'Boa! antispam-bot não vai kickar todos que entram neste bate-papo.',
+    he: 'מעולה! antispam-bot לא ירחיק את כל מי שנכנס לשיחוח.',
+    no: 'Supert! antispam-bot vil ikke sparke alle som blir med i chatten.',
+    yue: '好。antispam-bot 而家唔會再踢除所有嘗試入 group 嘅人。',
     hu:
-      'Nagyszerű! A Shieldy mostantól nem vágja ki az új csatlakozókat a csatornáról.',
-    fr: "Ok! Shieldy n'expulsera plus tous ceux qui entrent dans ce groupe.",
-    bg: 'Чудесно! Shieldy няма да изхвърля никой, влизащите в тази група. ',
+      'Nagyszerű! A antispam-bot mostantól nem vágja ki az új csatlakozókat a csatornáról.',
+    fr: "Ok! antispam-bot n'expulsera plus tous ceux qui entrent dans ce groupe.",
+    bg: 'Чудесно! antispam-bot няма да изхвърля никой, влизащите в тази група. ',
   },
   noAttack_true: {
     en:
-      "Great! Shieldy is disabled now. Don't forget to turn this mode off with /noAttack.",
+      "Great! antispam-bot is disabled now. Don't forget to turn this mode off with /noAttack.",
     es:
-      '¡Entendido! Ahora Shieldy está desactivado. No olvides desactivar este modo usando /noAttack.',
+      '¡Entendido! Ahora antispam-bot está desactivado. No olvides desactivar este modo usando /noAttack.',
     ca:
-      "Molt bé, a partir d'ara en Shieldy està desactivat i ja no vigilarà aquest xat. Per desactivar aquest mode fes servir la comanda /noAttack.",
+      "Molt bé, a partir d'ara en antispam-bot està desactivat i ja no vigilarà aquest xat. Per desactivar aquest mode fes servir la comanda /noAttack.",
     br:
-      'Boa! Shieldy está desativado agora. Não se esqueça de desativar esse modo com /noAttack.',
-    he: 'מעולה! Shieldy מכובה כעת. אל תשכחו לבטל את הפעולה בעזרת /noAttack.',
+      'Boa! antispam-bot está desativado agora. Não se esqueça de desativar esse modo com /noAttack.',
+    he: 'מעולה! antispam-bot מכובה כעת. אל תשכחו לבטל את הפעולה בעזרת /noAttack.',
     no:
-      'Supert! Nå er Shieldy deaktivert. Ikke glem å slå av denne modusen med /noAttack.',
+      'Supert! Nå er antispam-bot deaktivert. Ikke glem å slå av denne modusen med /noAttack.',
     yue:
-      'Shieldy 經已畀停用。要重新使用 Shieldy，請用 /noAttack 停用當前模式。',
+      'antispam-bot 經已畀停用。要重新使用 antispam-bot，請用 /noAttack 停用當前模式。',
     ru:
       'Отлично! Щилди отключён. Не забудьте снова включить его командой /noAttack.',
     hu:
-      'Nagyszerű! A Shieldy letiltva. ne felejtsd el kikapcsolni ezt a módot a /noAttack paranccsal.',
+      'Nagyszerű! A antispam-bot letiltva. ne felejtsd el kikapcsolni ezt a módot a /noAttack paranccsal.',
     fr:
-      "Super! Shieldy est maintenant désactivé. N'oubliez pas de désactiver ce mode via la commande /noAttack.",
+      "Super! antispam-bot est maintenant désactivé. N'oubliez pas de désactiver ce mode via la commande /noAttack.",
     bg:
-      'Страхотно! Shieldy в момента е деактивиран! Не забравяйте да изключите този режим с /noAttack.',
+      'Страхотно! antispam-bot в момента е деактивиран! Не забравяйте да изключите този режим с /noAttack.',
   },
   noAttack_false: {
-    en: 'Great! Shieldy is now on.',
-    es: '¡Entendido! Ahora Shieldy está activo.',
-    ca: "Molt bé, a partir d'ara en Shieldy està actiu i vigilant aquest xat.",
-    br: 'Boa! Shieldy está ativado agora.',
-    he: 'מעולה! Shieldy דלוק כעת.',
-    no: 'Supert! Shieldy er nå aktivert.',
+    en: 'Great! antispam-bot is now on.',
+    es: '¡Entendido! Ahora antispam-bot está activo.',
+    ca: "Molt bé, a partir d'ara en antispam-bot està actiu i vigilant aquest xat.",
+    br: 'Boa! antispam-bot está ativado agora.',
+    he: 'מעולה! antispam-bot דלוק כעת.',
+    no: 'Supert! antispam-bot er nå aktivert.',
     ru: 'Отлично! Щилди включён.',
-    yue: ' 正！Shieldy 已經開咗。',
+    yue: ' 正！antispam-bot 已經開咗。',
     hu: 'Nagyszerű! a Shieldly újra engedélyezve van.',
-    fr: 'Super! Shieldy est maintenant activé!',
-    bg: 'Чудесно! Shieldy вече е включен.',
+    fr: 'Super! antispam-bot est maintenant activé!',
+    bg: 'Чудесно! antispam-bot вече е включен.',
   },
   noChannelLinks_true: {
     en:
-      'Great! Shieldy will now delete messages that link to telegram channels.',
+      'Great! antispam-bot will now delete messages that link to telegram channels.',
     ru:
       'Отлично! Щилди теперь будет удалять сообщения с ссылками на Телеграм-каналы.',
     es:
-      '¡Genial! Ahora Shieldy eliminará todos los mensajes que contengan enlaces a otros canales de Telegram.',
+      '¡Genial! Ahora antispam-bot eliminará todos los mensajes que contengan enlaces a otros canales de Telegram.',
     ca:
-      "D'acord, a partir d'ara en Shieldy esborrarà tots el missatges que contenguin enllaços a altres canals de Telegram.",
+      "D'acord, a partir d'ara en antispam-bot esborrarà tots el missatges que contenguin enllaços a altres canals de Telegram.",
     br:
-      'Boa! Agora, o Shieldy excluirá as mensagens vinculadas aos canais do telegram.',
-    he: 'מעולה! מעכשיו Shieldy ימחק הודעות עם קישור לערוץ טלגרם.',
+      'Boa! Agora, o antispam-bot excluirá as mensagens vinculadas aos canais do telegram.',
+    he: 'מעולה! מעכשיו antispam-bot ימחק הודעות עם קישור לערוץ טלגרם.',
     no:
-      'Supert! Shieldy vil nå slette meldinger som lenker til andre Telegram-kanaler.',
+      'Supert! antispam-bot vil nå slette meldinger som lenker til andre Telegram-kanaler.',
     yue:
-      '好。由而家開始，Shieldy 會自動刪除所有連結到其它 Telegram 頻道嘅訊息。',
+      '好。由而家開始，antispam-bot 會自動刪除所有連結到其它 Telegram 頻道嘅訊息。',
     hu:
-      'Nagyszerű! A Shieldy mostantól törli az összes olyan linket, ami másik telegram csatornára hivatkozik.',
+      'Nagyszerű! A antispam-bot mostantól törli az összes olyan linket, ami másik telegram csatornára hivatkozik.',
     fr:
-      'Super! Shieldy va maintenant supprimer les messages qui renvoient vers des autres groupes telegram. ',
+      'Super! antispam-bot va maintenant supprimer les messages qui renvoient vers des autres groupes telegram. ',
     bg:
-      'Чудесно! Shieldy  ще изтрие съобщения, които водят към Telegram групи и канали. ',
+      'Чудесно! antispam-bot  ще изтрие съобщения, които водят към Telegram групи и канали. ',
   },
   noChannelLinks_false: {
     en:
-      'Great! Shieldy will not delete messages that link to telegram channels.',
+      'Great! antispam-bot will not delete messages that link to telegram channels.',
     ru:
       'Отлично! Щилди теперь не будет удалять сообщения с ссылками на Телеграм-каналы.',
     es:
-      '¡Genial! Ahora Shieldy no eliminará ningún mensaje que contenga enlaces a otros canales de Telegram.',
+      '¡Genial! Ahora antispam-bot no eliminará ningún mensaje que contenga enlaces a otros canales de Telegram.',
     ca:
-      "D'acord, a partir d'ara en Shieldy ja no esborrarà cap missatge que contengui enllaços a altres canals de Telegram.",
+      "D'acord, a partir d'ara en antispam-bot ja no esborrarà cap missatge que contengui enllaços a altres canals de Telegram.",
     br:
-      'Boa! O Shieldy não excluirá as mensagens vinculadas aos canais do telegram.',
-    he: 'מעולה! Shieldy לא ימחק הודעות עם קישור לערוצים בטלגרם.',
+      'Boa! O antispam-bot não excluirá as mensagens vinculadas aos canais do telegram.',
+    he: 'מעולה! antispam-bot לא ימחק הודעות עם קישור לערוצים בטלגרם.',
     no:
-      'Supert! Shieldy vil ikke slette meldinger som lenker til andre Telegram-kanaler.',
-    yue: '好。Shieldy 而家唔會自動刪除所有連結到其它 Telegram 頻道嘅訊息。',
+      'Supert! antispam-bot vil ikke slette meldinger som lenker til andre Telegram-kanaler.',
+    yue: '好。antispam-bot 而家唔會自動刪除所有連結到其它 Telegram 頻道嘅訊息。',
     hu:
-      'Nagyszerű! A Shieldy mostantól nem törli az olyan linket, ami másik telegram csatornára hivatkozik.',
+      'Nagyszerű! A antispam-bot mostantól nem törli az olyan linket, ami másik telegram csatornára hivatkozik.',
     fr:
-      "C'est noté! Shieldy ne supprimera plus les messages qui partagerons des liens vers des groupes telegram.",
+      "C'est noté! antispam-bot ne supprimera plus les messages qui partagerons des liens vers des groupes telegram.",
     bg:
-      'Чудесно! Shieldy няма да изтрива съобщения, които водят към Telegram групи и канали. ',
+      'Чудесно! antispam-bot няма да изтрива съобщения, които водят към Telegram групи и канали. ',
   },
   viewConfig: {
     en: 'Current config:',
@@ -1680,35 +1680,35 @@ export const localizations = {
   },
   banForFastRepliesToPosts_true: {
     en:
-      "Nice! Shieldy will ban (or kick) all users who reply to your channel's posts 5 seconds after the post is created.",
+      "Nice! antispam-bot will ban (or kick) all users who reply to your channel's posts 5 seconds after the post is created.",
     ru:
       'Отлично! Щилди будет банить (или кикать) пользователей, которые отвечают на посты вашего канала в течение 5 секунд после создания постов.',
     bg:
-      'Яко! Shieldy, ще забрани (или ще "изрита") всеки потребител, които отговорят на публикациите в канала ви 5 секунди след създаването на публикацията.',
+      'Яко! antispam-bot, ще забрани (или ще "изрита") всеки потребител, които отговорят на публикациите в канала ви 5 секунди след създаването на публикацията.',
   },
   banForFastRepliesToPosts_false: {
     en:
-      "Nice! Shieldy will not ban (or kick) all users who reply to your channel's posts 5 seconds after the post is created.",
+      "Nice! antispam-bot will not ban (or kick) all users who reply to your channel's posts 5 seconds after the post is created.",
     ru:
       'Отлично! Щилди не будет банить (или кикать) пользователей, которые отвечают на посты вашего канала в течение 5 секунд после создания постов.',
     bg:
-      'Яко! Shieldy няма да забранява (или да "изрита") никой потребител, които отговарят на публикациите на канала ви 5 секунди след създаването на публикацията.',
+      'Яко! antispam-bot няма да забранява (или да "изрита") никой потребител, които отговарят на публикациите на канала ви 5 секунди след създаването на публикацията.',
   },
   banNewTelegramUsers_true: {
     en:
-      'Nice! Shieldy will ban (or kick) all newcomers with Telegram ID greater than 1 000 000 000.',
+      'Nice! antispam-bot will ban (or kick) all newcomers with Telegram ID greater than 1 000 000 000.',
     ru:
       'Отлично! Щилди будет банить (или кикать) пользователей, у которых Телеграм ID больше 1 000 000 000.',
     bg:
-      'Чудесно! Shieldy, ще забрани (или ще "изрита") всички новодошли с идентификатор на Telegram над 1 000 000 000. ',
+      'Чудесно! antispam-bot, ще забрани (или ще "изрита") всички новодошли с идентификатор на Telegram над 1 000 000 000. ',
   },
   banNewTelegramUsers_false: {
     ru:
       'Отлично! Щилди не будет банить (или кикать) пользователей, у которых Телеграм ID больше 1 000 000 000.',
     en:
-      'Nice! Shieldy will no ban (or kick) all newcomers with Telegram ID greater than 1 000 000 000.',
+      'Nice! antispam-bot will no ban (or kick) all newcomers with Telegram ID greater than 1 000 000 000.',
     bg:
-      'Чудесно! Shieldy няма да забранява (или да "изрита") никой новодошъл с Telegram ID над 1 000 000 000.',
+      'Чудесно! antispam-bot няма да забранява (или да "изрита") никой новодошъл с Telegram ID над 1 000 000 000.',
   },
   reportToAdmins: {
     en: 'Reporting to ',
