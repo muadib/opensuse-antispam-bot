@@ -47,6 +47,9 @@ import { setupBanForFastRepliesToPosts } from '@commands/banForFastRepliesToPost
 import { setupRestrictTime } from '@commands/restrictTime'
 import { setupBanNewTelegramUsers } from '@commands/banNewTelegramUsers'
 import { messageSaver } from '@middlewares/messageSaver'
+import { setupReport, setupReport2, setupReport_test } from '@commands/report'
+import { setupRules } from '@commands/rules'
+import { setupTelegram } from '@commands/telegramChannel'
 
 // Ignore all messages that are too old
 bot.use(checkTime)
@@ -103,6 +106,16 @@ setupNewcomers(bot)
 
 // Catch
 bot.catch(report)
+
+//Report
+setupReport(bot)
+setupReport2(bot)
+setupReport_test(bot)
+
+// Rules
+setupRules(bot)
+
+setupTelegram(bot)
 
 if (!isMaster) {
   // Start bot

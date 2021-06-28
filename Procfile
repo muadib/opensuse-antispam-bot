@@ -1,1 +1,1 @@
-bot: (yarn build-ts || true) && node ./dist/index.js
+bot: (yarn build-ts || true) && concurrently -k -p \"[{name}]\" -n \"Bot,Kicker,Deleter\" -c \"yellow.bold,cyan.bold,blue.bold\" \"yarn start-bot\" \"yarn start-kicker\" \"yarn start-deleter\"
